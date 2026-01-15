@@ -21,7 +21,7 @@ export default function CTA() {
                 mass: 1
               }}
             >
-              Ready to grow your brand?
+              Ready to improve your smile?
             </motion.h2>
             <motion.p
               className='max-sm:text-sm text-slate-400 mb-10 max-w-xl mx-auto'
@@ -51,8 +51,10 @@ export default function CTA() {
                 delay: 0.3
               }}
             >
-              <GhostButton className='px-8 py-3 gap-2'>
-                Start your project <ArrowRightIcon size={20} />
+              <GhostButton className='px-8 py-3'>
+                <a href='tel:+' className='flex gap-2'>
+                  Contact Us <ArrowRightIcon size={20} />
+                </a>
               </GhostButton>
             </motion.div>
           </div>

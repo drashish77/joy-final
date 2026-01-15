@@ -10,8 +10,8 @@ export default function Features() {
       <div className='max-w-6xl mx-auto px-4'>
         <Title
           title='Services'
-          heading='Everything your brand needs to grow'
-          description='From strategy to execution, we help businesses build strong digital products and meaningful customer experiences.'
+          heading='Experience the Joy of a Healthy Smile'
+          description='From routine check-ups to advanced orthodontics and implants, we provide personalized dental solutions for every smile'
         />
 
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>

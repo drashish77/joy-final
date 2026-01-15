@@ -19,11 +19,12 @@ export default function Hero() {
   ]
 
   const trustedLogosText = [
-    'Startups',
-    'Scale-ups',
-    'Founders',
-    'Global teams',
-    'Creative brands'
+    'Root Canal Treatment (RCT)',
+    'Dental crown',
+    'Laser dentistry',
+    'Clear Aligners',
+    'Invisible Braces',
+    'Teeth Fillings'
   ]
 
   return (
@@ -75,9 +76,9 @@ export default function Hero() {
                   delay: 0.1
                 }}
               >
-                We design & build <br />
+                Caring for Your Smile <br />
                 <span className='bg-clip-text text-transparent bg-linear-to-r from-indigo-300 to-indigo-400'>
-                  high-impact digital experiences
+                  with Expertise & Trust
                 </span>
               </motion.h1>
 
@@ -94,9 +95,13 @@ export default function Hero() {
                   delay: 0.2
                 }}
               >
-                A creative digital agency helping startups and businesses grow
-                through thoughtful design, scalable development and
-                performance-driven strategy.
+                Joy Dental is a modern, patient-focused dental clinic dedicated
+                to providing comprehensive, high-quality dental care for
+                patients of all ages. Our clinic combines advanced dental
+                technology with a warm, friendly environment to ensure
+                comfortable and effective treatment outcomes. At Joy Dental, we
+                believe every smile deserves personalized attention, ethical
+                care, and long-lasting results.
               </motion.p>
 
               <motion.div
@@ -112,9 +117,9 @@ export default function Hero() {
                   delay: 0.3
                 }}
               >
-                <a href='/' className='w-full sm:w-auto'>
+                <a href='tel:+918085733733' className='w-full sm:w-auto'>
                   <PrimaryButton className='max-sm:w-full py-3 px-7'>
-                    Start your project
+                    Contact us
                     <ArrowRightIcon className='size-4' />
                   </PrimaryButton>
                 </a>

@@ -13,30 +13,30 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Pixel.io – Digital Agency Template | PrebuiltUI',
-    template: '%s | Pixel.io'
+    default: 'Joy Dental – complete dental solution | Dr Ashish Gupta',
+    template: '%s | Joy Dental'
   },
   description:
-    'Pixel.io is a modern digital agency template by PrebuiltUI, built for startups and growing businesses. Includes discovery, UI/UX design, development, pricing plans, FAQs, and conversion-focused sections.',
+    'Joy Dental is a modern complete dental solution by Dr Ashish Gupta, built for startups and growing businesses. Includes discovery, UI/UX design, development, pricing plans, FAQs, and conversion-focused sections.',
   keywords: [
-    'Pixel.io',
-    'PrebuiltUI',
-    'digital agency template',
+    'Joy Dental',
+    'Dr Ashish Gupta',
+    'complete dental solution',
     'Next.js agency website',
     'UI UX agency',
     'startup website template',
     'web development services',
     'design and development agency'
   ],
-  authors: [{ name: 'PrebuiltUI' }],
-  creator: 'PrebuiltUI',
-  publisher: 'PrebuiltUI',
+  authors: [{ name: 'Dr Ashish Gupta' }],
+  creator: 'Dr Ashish Gupta',
+  publisher: 'Dr Ashish Gupta',
 
   openGraph: {
-    title: 'Pixel.io – Digital Agency Template by PrebuiltUI',
+    title: 'Pixel.io – Digital Agency Template by Dr Ashish Gupta',
     description:
       'Launch faster with Pixel.io, a modern digital agency template featuring strategy, design, development, pricing plans, and FAQs.',
-    siteName: 'PrebuiltUI',
+    siteName: 'Dr Ashish Gupta',
     type: 'website'
   },
 
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: 'Pixel.io – Digital Agency Template',
     description:
       'A conversion-focused digital agency template built with Next.js. Perfect for startups, teams, and scalable brands.',
-    creator: '@prebuiltui'
+    creator: '@Dr Ashish Gupta'
   },
 
   robots: {
