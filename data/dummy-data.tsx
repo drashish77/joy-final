@@ -3,19 +3,52 @@ import { UploadIcon, VideoIcon, ZapIcon } from 'lucide-react'
 export const featuresData = [
   {
     icon: <UploadIcon className='w-6 h-6' />,
-    title: ' General Check-ups & Preventive Care',
+    title: 'Routine Check-ups',
 
-    desc: 'We understand your goals, audience and challenges to craft a clear, actionable strategy.'
+    desc: 'A regular dental checkup helps your dentist to determine whether you have any dental problems and aids you in maintaining oral health to fend against dental emergencies.'
+  },
+  {
+    icon: <UploadIcon className='w-6 h-6' />,
+    title: 'Scaling/ Teeth cleaning',
+
+    desc: 'A regular dental checkup helps your dentist to determine whether you have any dental problems and aids you in maintaining oral health to fend against dental emergencies.'
   },
   {
     icon: <ZapIcon className='w-6 h-6' />,
-    title: 'Design & Development',
-    desc: 'High-quality design and scalable development focused on performance and usability.'
+    title: 'Wisdom Tooth Surgery',
+    desc: "You'll probably need to have your wisdom teeth or third molar removed if it is impacted, which causes discomfort, infection, or other dental issues."
   },
   {
     icon: <VideoIcon className='w-6 h-6' />,
-    title: 'Launch & Growth',
-    desc: 'We launch, optimize and continuously improve to drive measurable business growth.'
+    title: 'Orthodontic Treatment',
+    desc: 'Whether teeth are crowded or positioned incorrectly in any other manner, orthodontic treatment can straighten or move teeth to improve their appearance and function.'
+  },
+  {
+    icon: <UploadIcon className='w-6 h-6' />,
+    title: 'Dental Implants',
+
+    desc: 'In dental implant surgery, tooth roots are replaced with metal posts that resemble screws, and damaged or missing teeth are replaced with prosthetic teeth that closely resemble real teeth in appearance and function.'
+  },
+  {
+    icon: <ZapIcon className='w-6 h-6' />,
+    title: 'Aesthetic Dentistry',
+    desc: 'Cosmetic dentistry uses a range of methods, including veneers, braces, and teeth whitening, to give you perfectly straight, white, and bright teeth.'
+  },
+  {
+    icon: <VideoIcon className='w-6 h-6' />,
+    title: 'Restorative Dentistry',
+    desc: 'The purpose of restorative dentistry is to repair damaged teeth or replace missing ones by saving and providing teeth that look, feel, and work like natural teeth.'
+  },
+  {
+    icon: <UploadIcon className='w-6 h-6' />,
+    title: 'Pediatric Dentistry',
+
+    desc: 'Pediatric dentists are dedicated to the oral health of children from infancy through the teen years, caring for a child’s teeth, gums, and mouth throughout the various stages of childhood.'
+  },
+  {
+    icon: <ZapIcon className='w-6 h-6' />,
+    title: 'Other Services',
+    desc: 'General dentistry services include complete exams, x-rays, dental cleanings, fillings, root canals, and extractions.'
   }
 ]
 
@@ -67,24 +100,46 @@ export const plansData = [
 
 export const faqData = [
   {
+    id: 1,
+    question: 'How often should I visit the dentist for a check-up?',
+    answer:
+      'You should visit the dentist for a check-up every six months to maintain oral health, catch issues early, and receive professional cleanings.'
+  },
+  {
+    id: 2,
+    question: 'What should I expect during my first visit to Joy Dental?',
+    answer:
+      'During your first visit to Joy Dental, expect a comprehensive oral exam, discussion of your dental health and goals, possible X-rays, and a customized treatment plan.'
+  },
+  {
+    id: 3,
     question: 'When will be an RCT (root canal treatment) needed for my tooth?',
     answer:
       'you might need a RCT include severe tooth pain, prolonged tooth sensitivity to hot or cold, pus discharge, darkening of the tooth, and tenderness when chewing.'
   },
   {
+    id: 4,
     question: 'What is the process for getting dental implants at joy dental',
     answer:
       'At Joy Dental, getting dental implants involves a consultation, implant placement, a healing period for bone integration, and then fitting the abutment and crown.'
   },
   {
+    id: 5,
     question: 'How long does a typical project take?',
     answer:
       'Project timelines vary by scope, but most projects take between 2–6 weeks. We provide a clear timeline after the discovery phase.'
   },
   {
+    id: 6,
     question: 'What types of braces does joy Dental offer?',
     answer:
       'Yes. We offer maintenance, optimization and growth support packages to ensure your product continues to perform and evolve.'
+  },
+  {
+    id: 7,
+    question: 'What safety measures are in place at Joy Dental clinics?',
+    answer:
+      'At Joy Dental, we have 10x safety protocols, radiation safety, and a 4-step sterilization process for instruments. We use AI-enhanced DORI protocols for sterilization compliance.'
   }
 ]
 
@@ -94,7 +149,7 @@ export const footerLinks = [
     links: [
       { name: 'Home', url: '#' },
       { name: 'Services', url: '#' },
-      { name: 'Work', url: '#' },
+      { name: 'cases', url: '#' },
       { name: 'Contact', url: '#' }
     ]
   },
@@ -110,11 +165,11 @@ export const footerLinks = [
     links: [
       { name: 'Twitter', url: '#' },
       { name: 'LinkedIn', url: '#' },
-      { name: 'GitHub', url: '#' }
+      { name: 'instagram', url: '#' },
+      { name: 'facebook', url: '#' }
     ]
   }
 ]
-
 
 export const items = [
   {
@@ -225,3 +280,107 @@ export const items = [
 
 // Gum Care & Oral Hygiene Management
 //
+
+export const heroCarouselItems = [
+  {
+    id: 1,
+    url: 'https://images.unsplash.com/photo-1599566219227-2efe0c9b7f5f?q=80&w=880&auto=format&fit=crop',
+    title: 'Misty Mountain Majesty'
+  },
+  {
+    id: 2,
+    url: 'https://images.unsplash.com/photo-1617812191081-2a24e3f30e45?q=80&w=880&auto=format&fit=crop',
+    title: 'Winter Wonderland'
+  },
+  {
+    id: 3,
+    url: 'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Autumn Mountain Retreat'
+  },
+  {
+    id: 4,
+    url: 'https://images.unsplash.com/photo-1548382131-e0ebb1f0cdea?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Tranquil Lake Reflection'
+  },
+  {
+    id: 5,
+    url: 'https://images.unsplash.com/photo-1567516364473-233c4b6fcfbe?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Misty Mountain Peaks'
+  },
+  {
+    id: 6,
+    url: 'https://images.unsplash.com/photo-1570840934347-4dc56c98b8ef?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Golden Hour Glow'
+  },
+  {
+    id: 7,
+    url: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Snowy Mountain Highway'
+  },
+  {
+    id: 8,
+    url: 'https://images.unsplash.com/photo-1525786210598-d527194d3e9a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Foggy Mountain Forest'
+  },
+  {
+    id: 9,
+    url: 'https://images.unsplash.com/photo-1517677129300-07b130802f46?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Sunset Mountain Silhouette'
+  },
+  {
+    id: 10,
+    url: 'https://images.unsplash.com/photo-1598256989809-394fa4f6cd26?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Alpine Meadow Bliss'
+  },
+  {
+    id: 11,
+    url: 'https://images.unsplash.com/photo-1720685193964-4529228a33c1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Mountain Lake Serenity'
+  },
+  {
+    id: 12,
+    url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Icy Mountain Stream'
+  },
+  {
+    id: 13,
+    url: 'https://images.unsplash.com/photo-1656514894252-fb336a3ad6a6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Wildflower Mountain Meadow'
+  },
+  {
+    id: 14,
+    url: 'https://images.unsplash.com/photo-1609840113929-b130355987e1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Mountain Valley Vista'
+  },
+  {
+    id: 15,
+    url: 'https://images.unsplash.com/photo-1593022356769-11f762e25ed9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Rugged Mountain Terrain'
+  },
+  {
+    id: 16,
+    url: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Mountain Wildflower Bloom'
+  },
+  {
+    id: 17,
+    url: 'https://images.unsplash.com/photo-1677026010083-78ec7f1b84ed?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Mountain River Rapids'
+  },
+  {
+    id: 18,
+    url: 'https://images.unsplash.com/photo-1654373535457-383a0a4d00f9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Mountain River Rapids'
+  },
+  {
+    id: 19,
+    url: 'https://images.unsplash.com/photo-1663182234283-28941e7612da?q=80&w=1993&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Mountain River Rapids'
+  }
+  //   {
+  //     id: 18,
+
+  //     url: 'https://images.unsplash.com/photo-1590872000386-4348c6393115?q=80&w=688&auto=format&fit=crop',
+  //     title: 'Lush Mountain Valley'
+  //   }
+]

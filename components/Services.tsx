@@ -64,8 +64,8 @@ export default function FramerMultiSlideCarousel({
 
   return (
     <div className='w-full lg:p-10 sm:p-4 p-2'>
-      <h2 className='text-2xl mb-4'>
-        Responsive Multi-Slide Carousel (Showing {slidesToShow})
+      <h2 className='text-2xl text-center pb-14 '>
+        Before after (Showing {slidesToShow})
       </h2>
       <div className='flex flex-col gap-3'>
         <div className='relative overflow-hidden rounded-lg' ref={containerRef}>

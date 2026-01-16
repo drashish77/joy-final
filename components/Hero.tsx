@@ -1,6 +1,7 @@
 import { ArrowRightIcon, PlayIcon, ZapIcon, CheckIcon } from 'lucide-react'
 import { PrimaryButton, GhostButton } from './Buttons'
 import { motion } from 'motion/react'
+import FramerCarouselThumbnails from './HeroCarousel'
 
 export default function Hero() {
   const trustedUserImages = [
@@ -97,11 +98,11 @@ export default function Hero() {
               >
                 Joy Dental is a modern, patient-focused dental clinic dedicated
                 to providing comprehensive, high-quality dental care for
-                patients of all ages. Our clinic combines advanced dental
-                technology with a warm, friendly environment to ensure
-                comfortable and effective treatment outcomes. At Joy Dental, we
-                believe every smile deserves personalized attention, ethical
-                care, and long-lasting results.
+                patients. We combine advanced dental technology with a warm,
+                friendly environment to ensure comfortable and effective
+                treatment outcomes. At Joy Dental, we believe every smile
+                deserves personalized attention, ethical care, and long-lasting
+                results.
               </motion.p>
 
               <motion.div
@@ -146,9 +147,9 @@ export default function Hero() {
                 <div className='flex items-center gap-2 p-2 px-3 sm:px-6.5 hover:bg-white/3 transition-colors'>
                   <ZapIcon className='size-4 text-sky-500' />
                   <div>
-                    <div>Strategy-led execution</div>
+                    <div>Premium dental care</div>
                     <div className='text-xs text-gray-400'>
-                      Focused on growth & results
+                      world class dental material
                     </div>
                   </div>
                 </div>
@@ -158,9 +159,9 @@ export default function Hero() {
                 <div className='flex items-center gap-2 p-2 px-3 sm:px-6.5 hover:bg-white/3 transition-colors'>
                   <CheckIcon className='size-4 text-cyan-500' />
                   <div>
-                    <div>Full-service delivery</div>
+                    <div>with experience</div>
                     <div className='text-xs text-gray-400'>
-                      Design, dev & marketing
+                      with 12 years of experience
                     </div>
                   </div>
                 </div>
@@ -168,7 +169,8 @@ export default function Hero() {
             </div>
 
             {/* Right: modern mockup card */}
-            <motion.div
+            <FramerCarouselThumbnails />
+            {/* <motion.div
               className='mx-auto w-full max-w-lg'
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -246,7 +248,7 @@ export default function Hero() {
                   20+ completed projects
                 </motion.div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </section>
