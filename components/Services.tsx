@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useMotionValue, animate } from 'motion/react'
 import { items } from '@/data/dummy-data'
+import Title from './Title'
 
 export default function FramerMultiSlideCarousel({
   breakpoints = {
@@ -64,9 +65,14 @@ export default function FramerMultiSlideCarousel({
 
   return (
     <div className='w-full lg:p-10 sm:p-4 p-2'>
-      <h2 className='text-2xl text-center pb-14 '>
-        Before after (Showing {slidesToShow})
-      </h2>
+      {/* <h2 className='text-2xl text-center pb-14 '>
+        Gallery (Showing {slidesToShow})
+      </h2> */}
+      <Title
+        title='Services'
+        heading='Experience the Joy of a Healthy Smile'
+        description='From routine check-ups to advanced orthodontics and implants, we provide personalized dental solutions for every smile'
+      />
       <div className='flex flex-col gap-3'>
         <div className='relative overflow-hidden rounded-lg' ref={containerRef}>
           <motion.div className='flex gap-4' style={{ x }}>
