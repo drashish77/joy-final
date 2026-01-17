@@ -69,8 +69,8 @@ export default function FramerMultiSlideCarousel({
         Gallery (Showing {slidesToShow})
       </h2> */}
       <Title
-        title='Services'
-        heading='Experience the Joy of a Healthy Smile'
+        title='Gallery'
+        heading='Before and After Photos'
         description='From routine check-ups to advanced orthodontics and implants, we provide personalized dental solutions for every smile'
       />
       <div className='flex flex-col gap-3'>

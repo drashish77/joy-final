@@ -44,8 +44,15 @@ export default function Features() {
               }}
               className='rounded-2xl p-6 bg-white/3 border border-white/6'
             >
-              <div className='w-12 h-12 rounded-lg bg-violet-900/20 flex items-center justify-center mb-4'>
-                {feature.icon}
+              <div className=' rounded-lg bg-violet-900/20 flex items-center justify-center mb-4'>
+                <div className='shrink-0 w-full h-56 md:h-40 '>
+                  <img
+                    src={feature.imgUrl}
+                    alt={feature.title}
+                    className='w-full h-full object-cover rounded-lg select-none pointer-events-none'
+                    draggable={false}
+                  />
+                </div>
               </div>
               <h3 className='text-lg font-semibold mb-2'>{feature.title}</h3>
               <p className='text-gray-300 text-sm leading-relaxed'>

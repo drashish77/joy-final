@@ -3,51 +3,56 @@ import { UploadIcon, VideoIcon, ZapIcon } from 'lucide-react'
 export const featuresData = [
   {
     icon: <UploadIcon className='w-6 h-6' />,
+    imgUrl: 'img/checkUp.jpg',
     title: 'Routine Check-ups',
-
     desc: 'A regular dental checkup helps your dentist to determine whether you have any dental problems and aids you in maintaining oral health to fend against dental emergencies.'
   },
   {
     icon: <UploadIcon className='w-6 h-6' />,
     title: 'Scaling/ Teeth cleaning',
-
+    imgUrl: 'img/scaling.jpeg',
     desc: 'A regular dental checkup helps your dentist to determine whether you have any dental problems and aids you in maintaining oral health to fend against dental emergencies.'
   },
   {
     icon: <ZapIcon className='w-6 h-6' />,
     title: 'Wisdom Tooth Surgery',
+    imgUrl: 'img/wisdomTooth.jpg',
     desc: "You'll probably need to have your wisdom teeth or third molar removed if it is impacted, which causes discomfort, infection, or other dental issues."
   },
   {
     icon: <VideoIcon className='w-6 h-6' />,
     title: 'Orthodontic Treatment',
+    imgUrl: 'img/ortho.jpg',
     desc: 'Whether teeth are crowded or positioned incorrectly in any other manner, orthodontic treatment can straighten or move teeth to improve their appearance and function.'
   },
   {
     icon: <UploadIcon className='w-6 h-6' />,
     title: 'Dental Implants',
-
+    imgUrl: 'img/implant.jpg',
     desc: 'In dental implant surgery, tooth roots are replaced with metal posts that resemble screws, and damaged or missing teeth are replaced with prosthetic teeth that closely resemble real teeth in appearance and function.'
   },
   {
     icon: <ZapIcon className='w-6 h-6' />,
     title: 'Aesthetic Dentistry',
+    imgUrl: 'img/veneer.jpeg',
     desc: 'Cosmetic dentistry uses a range of methods, including veneers, braces, and teeth whitening, to give you perfectly straight, white, and bright teeth.'
   },
   {
     icon: <VideoIcon className='w-6 h-6' />,
     title: 'Restorative Dentistry',
+    imgUrl: 'img/restoration.png',
     desc: 'The purpose of restorative dentistry is to repair damaged teeth or replace missing ones by saving and providing teeth that look, feel, and work like natural teeth.'
   },
   {
     icon: <UploadIcon className='w-6 h-6' />,
     title: 'Pediatric Dentistry',
-
+    imgUrl: 'img/pediatric.jpg',
     desc: 'Pediatric dentists are dedicated to the oral health of children from infancy through the teen years, caring for a child’s teeth, gums, and mouth throughout the various stages of childhood.'
   },
   {
     icon: <ZapIcon className='w-6 h-6' />,
     title: 'Other Services',
+    imgUrl: 'img/other.jpg',
     desc: 'General dentistry services include complete exams, x-rays, dental cleanings, fillings, root canals, and extractions.'
   }
 ]
