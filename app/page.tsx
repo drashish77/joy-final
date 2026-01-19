@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Features />
       <FramerMultiSlideCarousel />
-      <Pricing />
+      {/* <Pricing /> */}
       <Faq />
       <CTA />
     </>

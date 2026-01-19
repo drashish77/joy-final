@@ -92,12 +92,13 @@ function FramerCarouselThumbnails() {
               ${
                 index === 0
                   ? 'opacity-40 cursor-not-allowed'
-                  : 'bg-white hover:scale-110 hover:opacity-100 opacity-70'
+                  : 'bg-white text-black hover:scale-110 hover:opacity-100 opacity-70'
               }`}
           >
             <svg
               className='w-6 h-6'
               fill='none'
+              // stroke='currentColor'
               stroke='currentColor'
               viewBox='0 0 24 24'
             >
@@ -120,7 +121,7 @@ function FramerCarouselThumbnails() {
               ${
                 index === heroCarouselItems.length - 1
                   ? 'opacity-40 cursor-not-allowed'
-                  : 'bg-white hover:scale-110 hover:opacity-100 opacity-70'
+                  : 'bg-white text-black  hover:scale-110 hover:opacity-100 opacity-70'
               }`}
           >
             <svg

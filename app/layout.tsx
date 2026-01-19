@@ -12,39 +12,49 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://joydent.in'),
   title: {
-    default: 'Joy Dental – complete dental solution | Dr Ashish Gupta',
+    default: 'Joy Dental – Dental Care That Brings You Joy',
     template: '%s | Joy Dental'
   },
+
   description:
-    'Joy Dental is a modern complete dental solution by Dr Ashish Gupta, built for startups and growing businesses. Includes discovery, UI/UX design, development, pricing plans, FAQs, and conversion-focused sections.',
+    'Experience gentle, advanced, and personalized dental care at Joy Dental. From routine check-ups to expert orthodontic and implant treatments, we care for every smile with joy. Expert care by Dr. Priyanka Gupta (MDS Orthodontics, KGMC Lucknow) & Dr. Ashish Gupta (BDS, MBA)',
   keywords: [
     'Joy Dental',
-    'Dr Ashish Gupta',
-    'complete dental solution',
-    'Next.js agency website',
-    'UI UX agency',
-    'startup website template',
-    'web development services',
-    'design and development agency'
+    'dental clinic',
+    'dentist near me',
+    'orthodontist',
+    'braces',
+    'aligners',
+    'dental implants',
+    'root canal treatment',
+    'smile design',
+    'teeth cleaning',
+    'pediatric dentist',
+    'general dentist',
+    'orthodontic clinic',
+    'dental care'
   ],
   authors: [{ name: 'Dr Ashish Gupta' }],
   creator: 'Dr Ashish Gupta',
   publisher: 'Dr Ashish Gupta',
 
   openGraph: {
-    title: 'Pixel.io – Digital Agency Template by Dr Ashish Gupta',
+    title: 'Joy Dental – Dental Care That Brings You Joy',
     description:
-      'Launch faster with Pixel.io, a modern digital agency template featuring strategy, design, development, pricing plans, and FAQs.',
-    siteName: 'Dr Ashish Gupta',
-    type: 'website'
+      'Experience gentle, advanced, and personalized dental care at Joy Dental. From routine check-ups to expert orthodontic and implant treatments, we care for every smile with joy',
+    siteName: 'Joy dental',
+    url: 'https://joydent.in',
+    type: 'website',
+    images: [{ url: 'https://joydent.in/joydent_final_cover.png' }]
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Pixel.io – Digital Agency Template',
+    title: 'Joy Dental – Dental Care That Brings You Joy',
     description:
-      'A conversion-focused digital agency template built with Next.js. Perfect for startups, teams, and scalable brands.',
+      'Experience gentle, advanced, and personalized dental care at Joy Dental. From routine check-ups to expert orthodontic and implant treatments, we care for every smile with joy',
     creator: '@Dr Ashish Gupta'
   },
 

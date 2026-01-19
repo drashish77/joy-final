@@ -41,9 +41,9 @@ export default function Navbar() {
         </div>
 
         <div className='hidden md:flex items-center gap-3'>
-          <button className='text-sm font-medium text-gray-300 hover:text-white transition max-sm:hidden'>
+          {/* <button className='text-sm font-medium text-gray-300 hover:text-white transition max-sm:hidden'>
             Sign in
-          </button>
+          </button> */}
           <PrimaryButton className='max-sm:text-xs hidden sm:inline-block'>
             Get Started
           </PrimaryButton>
@@ -64,12 +64,12 @@ export default function Navbar() {
           </a>
         ))}
 
-        <button
+        {/* <button
           onClick={() => setIsOpen(false)}
           className='font-medium text-gray-300 hover:text-white transition'
         >
           Sign in
-        </button>
+        </button> */}
         <PrimaryButton onClick={() => setIsOpen(false)}>
           Get Started
         </PrimaryButton>

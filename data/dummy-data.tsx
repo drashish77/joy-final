@@ -11,7 +11,7 @@ export const featuresData = [
     icon: <UploadIcon className='w-6 h-6' />,
     title: 'Scaling/ Teeth cleaning',
     imgUrl: 'img/scaling.jpeg',
-    desc: 'A regular dental checkup helps your dentist to determine whether you have any dental problems and aids you in maintaining oral health to fend against dental emergencies.'
+    desc: 'Scaling and root planing is a deep dental cleaning of gum. It removes tartar and bacteria that build up around the roots of your teeth.'
   },
   {
     icon: <ZapIcon className='w-6 h-6' />,
@@ -154,7 +154,7 @@ export const footerLinks = [
     links: [
       { name: 'Home', url: '#' },
       { name: 'Services', url: '#' },
-      { name: 'cases', url: '#' },
+      { name: 'Gallery', url: '#' },
       { name: 'Contact', url: '#' }
     ]
   },
@@ -388,4 +388,47 @@ export const heroCarouselItems = [
   //     url: 'https://images.unsplash.com/photo-1590872000386-4348c6393115?q=80&w=688&auto=format&fit=crop',
   //     title: 'Lush Mountain Valley'
   //   }
+]
+
+export const GalleryItems = [
+  {
+    id: 1,
+    url: 'img/implant1.jpg',
+    title: 'Misty Mountain Majesty'
+  },
+  {
+    id: 2,
+    url: 'img/implant2.jpg',
+    title: 'Winter Wonderland'
+  },
+  {
+    id: 3,
+    url: 'img/Invisalign1.jpg',
+    title: 'Autumn Mountain Retreat'
+  },
+  {
+    id: 4,
+    url: 'https://images.unsplash.com/photo-1683722319473-f851deb3fdf2?q=80&w=880&auto=format&fit=crop',
+    title: 'Tranquil Lake Reflection'
+  },
+  {
+    id: 5,
+    url: 'https://images.unsplash.com/photo-1560790671-b76ca4de55ef?q=80&w=734&auto=format&fit=crop',
+    title: 'Misty Mountain Peaks'
+  },
+  {
+    id: 6,
+    url: 'https://images.unsplash.com/photo-1698774303292-7af9410c3a57?q=80&w=436&auto=format&fit=cropv',
+    title: 'Golden Hour Glow'
+  },
+  {
+    id: 7,
+    url: 'https://images.unsplash.com/photo-1643994542584-1247b5266429?q=80&w=869&auto=format&fit=crop',
+    title: 'Snowy Mountain Highway'
+  },
+  {
+    id: 8,
+    url: 'https://images.unsplash.com/photo-1613681230409-6423a38c43e1?q=80&w=871&auto=format&fit=crop',
+    title: 'Foggy Mountain Forest'
+  }
 ]

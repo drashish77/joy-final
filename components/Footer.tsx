@@ -16,9 +16,8 @@ export default function Footer() {
           <div>
             <img src='/logo.svg' alt='logo' className='h-8' />
             <p className='max-w-[410px] mt-6 text-sm leading-relaxed'>
-              We are a digital agency focused on strategy, design and
-              development—helping brands build meaningful digital experiences
-              and grow sustainably.
+              Joy Dental is a modern, patient-focused dental clinic dedicated to
+              providing comprehensive, high-quality dental care for patients.
             </p>
           </div>
 
@@ -48,11 +47,7 @@ export default function Footer() {
         </div>
 
         <p className='py-4 text-center text-sm text-gray-400'>
-          © {new Date().getFullYear()}{' '}
-          <a href='https://prebuiltui.com/tailwind-templates?ref=pixel-forge'>
-            PrebuiltUI
-          </a>
-          . All rights reserved.
+          © {new Date().getFullYear()} Joy dental . All rights reserved.
         </p>
       </div>
     </motion.footer>
