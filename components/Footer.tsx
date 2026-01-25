@@ -14,7 +14,7 @@ export default function Footer() {
       <div className='max-w-6xl mx-auto px-6'>
         <div className='flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-white/10'>
           <div>
-            <img src='/logo.svg' alt='logo' className='h-8' />
+            <img src='/logo_black_1.svg' alt='logo' className='h-20' />
             <p className='max-w-[410px] mt-6 text-sm leading-relaxed'>
               Joy Dental is a modern, patient-focused dental clinic dedicated to
               providing comprehensive, high-quality dental care for patients.

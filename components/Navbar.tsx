@@ -10,7 +10,8 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', href: '/#' },
     { name: 'Features', href: '/#features' },
-    { name: 'Pricing', href: '/#pricing' },
+    // { name: 'Pricing', href: '/#pricing' },
+    { name: 'Blogs', href: '/blogs' },
     { name: 'FAQ', href: '/#faq' }
   ]
 
@@ -24,8 +25,17 @@ export default function Navbar() {
     >
       <div className='max-w-6xl mx-auto flex items-center justify-between bg-black/50 backdrop-blur-md border border-white/4 rounded-2xl p-3'>
         <a href='/#'>
-          {/* <img src='/logo.svg' alt='logo' className='h-8' /> */}
-          <p>JOY DENTAL</p>
+          <img
+            src='/logo_short_white.svg'
+            alt='logo'
+            className='h-8 lg:hidden'
+          />
+          <img
+            src='/logo_black_1.svg'
+            alt='logo'
+            className='h-16 hidden lg:block'
+          />
+          {/* <p>JOY DENTAL</p> */}
         </a>
 
         <div className='hidden md:flex items-center gap-8 text-sm font-medium text-gray-300'>

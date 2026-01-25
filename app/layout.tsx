@@ -1,4 +1,4 @@
-import { Outfit } from 'next/font/google'
+import { Outfit, Cookie } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
@@ -10,7 +10,11 @@ const outfit = Outfit({
   variable: '--font-sans',
   subsets: ['latin']
 })
-
+const cookie = Cookie({
+  variable: '--logo',
+  weight: '400',
+  subsets: ['latin']
+})
 export const metadata: Metadata = {
   metadataBase: new URL('https://joydent.in'),
   title: {
