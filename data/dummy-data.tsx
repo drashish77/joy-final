@@ -154,9 +154,9 @@ export const footerLinks = [
     title: 'Company',
     links: [
       { name: 'Home', url: '#' },
-      { name: 'Services', url: '#' },
-      { name: 'Gallery', url: '#' },
-      { name: 'Contact', url: '#' }
+      { name: 'Services', url: '#services' },
+      { name: 'Blogs', url: '#blogs' },
+      { name: 'Contact', url: '#contact' }
     ]
   },
   {
@@ -446,7 +446,7 @@ export const blogs = [
     author: 'Sarah Johnson',
     date: '2024-01-15',
     image:
-      'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+      'https://images.unsplash.com/photo-1560070201-d3d11effa179?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
       'As we navigate through 2024, industry experts are sharing their predictions about the future of technology. From artificial intelligence to quantum computing, the landscape is rapidly evolving.\n\nKey areas of focus include:\n\n1. **Artificial Intelligence**: AI is becoming more accessible and practical for everyday applications.\n\n2. **Quantum Computing**: Major breakthroughs are expected in quantum computing within the next 3-5 years.\n\n3. **Sustainable Tech**: Green technology and energy-efficient solutions are becoming mainstream.\n\n4. **Cybersecurity**: With increased digital threats, cybersecurity remains a top priority.\n\nExpert Quote: "The convergence of AI and IoT will reshape how we interact with technology." - Tech Industry Leader\n\nThese predictions suggest that the next decade will be transformative for the entire tech industry.'
   },
@@ -460,7 +460,7 @@ export const blogs = [
     author: 'Michael Chen',
     date: '2024-01-10',
     image:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop',
+      'https://images.unsplash.com/photo-1620775997780-a01e050a9db4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
       "Digital transformation is no longer optional—it's essential for businesses to survive and thrive. This comprehensive guide outlines the key steps to implement successful digital transformation.\n\n**Phase 1: Assessment**\nUnderstand your current state and identify gaps.\n\n**Phase 2: Strategy**\nDevelop a clear roadmap for your digital journey.\n\n**Phase 3: Implementation**\nExecute your plan with proper tools and team alignment.\n\n**Phase 4: Optimization**\nContinuously improve and adapt to market changes.\n\nSuccess factors include:\n- Leadership commitment\n- Employee training and adoption\n- Technology infrastructure\n- Data management and security\n- Customer-centric approach\n\nOrganizations that prioritize digital transformation are seeing 20-30% improvements in operational efficiency."
   },
@@ -474,7 +474,7 @@ export const blogs = [
     author: 'Emily Rodriguez',
     date: '2024-01-05',
     image:
-      'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop',
+      'https://images.unsplash.com/photo-1553691158-91a7f9183156?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
       "Web design continues to evolve with new technologies and user expectations. Here are the top trends that designers should watch in 2024.\n\n**1. Dark Mode as Default**\nMany users prefer dark mode, and it's becoming a standard offering.\n\n**2. Micro-interactions**\nSmall, delightful animations that improve user experience.\n\n**3. Minimalist Navigation**\nSimplified menus and cleaner interfaces.\n\n**4. Bold Typography**\nLarge, expressive fonts make stronger statements.\n\n**5. AI-Powered Personalization**\nDynamic content that adapts to individual users.\n\n**6. Voice Interface Integration**\nVoice search and voice commands becoming standard.\n\n**7. Sustainable Design**\nOptimizing for performance and lower energy consumption.\n\nThe key is balancing aesthetic appeal with functionality and accessibility."
   },
@@ -488,7 +488,7 @@ export const blogs = [
     author: 'David Park',
     date: '2023-12-28',
     image:
-      'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&h=300&fit=crop',
+      'https://images.unsplash.com/photo-1626736985932-c0df2ae07a2e?q=80&w=2231&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
       'Machine learning is revolutionizing how we solve problems and make decisions. This guide breaks down the key concepts for beginners.\n\n**What is Machine Learning?**\nMachine learning is a subset of artificial intelligence that enables systems to learn from data without being explicitly programmed.\n\n**Three Main Types:**\n\n1. **Supervised Learning**: Models trained on labeled data\n2. **Unsupervised Learning**: Models identify patterns in unlabeled data\n3. **Reinforcement Learning**: Models learn through interaction and rewards\n\n**Real-World Applications:**\n- Email spam detection\n- Image recognition\n- Recommendation systems\n- Predictive analytics\n- Natural language processing\n\n**Getting Started:**\nBegin with Python and libraries like scikit-learn and TensorFlow. Take online courses and practice with real datasets.\n\nThe future belongs to those who understand and can work with machine learning.'
   },
@@ -502,7 +502,7 @@ export const blogs = [
     author: 'Jessica Williams',
     date: '2023-12-20',
     image:
-      'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&h=300&fit=crop',
+      'https://images.unsplash.com/photo-1486049125644-f35e226a5e14?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
       'Remote work has become the new normal. Here are proven strategies to maximize productivity while maintaining work-life balance.\n\n**Setting Up Your Workspace**\n- Create a dedicated office space\n- Invest in ergonomic furniture\n- Ensure proper lighting and ventilation\n\n**Daily Routines**\n- Start with a consistent wake-up time\n- Take regular breaks\n- Schedule dedicated lunch breaks\n- End your day with a shutdown routine\n\n**Communication Tips**\n- Use video calls for important discussions\n- Respond to messages within reasonable timeframes\n- Over-communicate in asynchronous settings\n\n**Managing Distractions**\n- Silence notifications during focus time\n- Use the Pomodoro technique\n- Set clear boundaries with family/roommates\n\n**Staying Connected**\n- Participate in virtual team meetings\n- Join online communities\n- Schedule regular one-on-ones with colleagues\n\n**Health and Well-being**\n- Take breaks away from screens\n- Exercise regularly\n- Maintain a healthy diet\n\nRemote work success requires intentional habit-building and discipline.'
   },
@@ -544,7 +544,7 @@ export const blogs = [
     author: 'Nathan Brooks',
     date: '2023-12-05',
     image:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop',
+      'https://images.unsplash.com/photo-1522849696084-818b29dfe210?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
       'In the digital age, customer experience is everything. Companies that prioritize CX see higher retention and revenue.\n\n**Understanding Your Customers**\n- Create detailed customer personas\n- Map customer journeys\n- Collect feedback regularly\n- Use analytics to understand behavior\n\n**Omnichannel Strategy**\nProvide seamless experiences across:\n- Website\n- Mobile app\n- Social media\n- In-store (if applicable)\n- Customer service channels\n\n**Personalization**\n- Use data to tailor experiences\n- Recommend relevant products/services\n- Address customers by name\n- Anticipate needs\n\n**Speed and Efficiency**\n- Minimize wait times\n- Simplify processes\n- Provide quick solutions\n- Proactive communication\n\n**Building Loyalty**\n- Reward repeat customers\n- Create exclusive programs\n- Show appreciation\n- Exceed expectations\n\n**Measuring CX**\n- Net Promoter Score (NPS)\n- Customer Satisfaction (CSAT)\n- Customer Effort Score (CES)\n- Retention rates\n\nInvesting in CX delivers measurable business results.'
   },
@@ -558,7 +558,7 @@ export const blogs = [
     author: 'Maria Gonzalez',
     date: '2023-11-30',
     image:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop',
+      'https://images.unsplash.com/photo-1609207825181-52d3214556dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
       "Innovation drives business growth. Here's how to build a culture where innovation thrives.\n\n**Leadership Commitment**\n- Allocate resources for innovation\n- Model innovative thinking\n- Celebrate failures as learning opportunities\n\n**Empowering Teams**\n- Give autonomy in decision-making\n- Encourage experimentation\n- Provide continuous learning opportunities\n- Create diverse teams\n\n**Creating Safe Space**\n- Reduce fear of failure\n- Encourage bold ideas\n- Support unconventional thinking\n- Learn from setbacks\n\n**Structured Innovation**\n- Dedicated innovation time\n- Innovation workshops and brainstorming\n- Cross-functional collaboration\n- Clear evaluation criteria\n\n**External Collaboration**\n- Partner with startups\n- Attend industry conferences\n- Collaborate with universities\n- Engage with customer feedback\n\n**Measurement**\n- Track innovation metrics\n- Monitor adoption rates\n- Measure ROI\n- Celebrate successes\n\n**Examples of Innovation**\n- Process improvements\n- New products/services\n- Business model innovations\n- Technology adoption\n\nOrganizations that cultivate innovation consistently outperform competitors."
   }

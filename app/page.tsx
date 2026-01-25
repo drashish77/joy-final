@@ -1,9 +1,10 @@
 'use client'
+import Blogs from '@/components/Blogs'
+import Contact from '@/components/Contact'
 import CTA from '@/components/CTA'
 import Faq from '@/components/Faq'
 import Features from '@/components/Features'
 import Hero from '@/components/Hero'
-import Pricing from '@/components/Pricing'
 import FramerMultiSlideCarousel from '@/components/Services'
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       <Hero />
       <Features />
       <FramerMultiSlideCarousel />
-      {/* <Pricing /> */}
+      <Blogs />
       <Faq />
       <CTA />
     </>

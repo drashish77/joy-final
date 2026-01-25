@@ -18,7 +18,7 @@ export default function BlogsPage() {
     <main className='min-h-screen bg-background'>
       {/* Header */}
       <div className='relative pt-20 pb-16 bg-gradient-to-b from-primary/10 to-background'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-20'>
           <Link
             href='/'
             className='inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-6'

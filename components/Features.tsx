@@ -6,7 +6,7 @@ import { motion } from 'motion/react'
 export default function Features() {
   const refs = useRef<(HTMLDivElement | null)[]>([])
   return (
-    <section id='features' className='py-20 2xl:py-32'>
+    <section id='services' className='py-20 2xl:py-32'>
       <div className='max-w-6xl mx-auto px-4'>
         <Title
           title='Services'
