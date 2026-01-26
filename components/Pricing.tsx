@@ -80,10 +80,13 @@ export default function Pricing() {
 
               <div>
                 {plan.popular ? (
-                  <PrimaryButton className='w-full'>Get started</PrimaryButton>
+                  <PrimaryButton className='w-full'>
+                    {' '}
+                    <a href='tel:+918085733733'>Get started</a>
+                  </PrimaryButton>
                 ) : (
                   <GhostButton className='w-full justify-center'>
-                    Get started
+                    <a href='tel:+918085733733'>Get started</a>
                   </GhostButton>
                 )}
               </div>

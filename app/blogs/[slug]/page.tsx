@@ -19,7 +19,7 @@ export default function BlogDetailPage() {
   if (!blog) {
     return (
       <main className='min-h-screen bg-background flex items-center justify-center'>
-        <div className='text-center'>
+        <div className='text-center '>
           <h1 className='text-3xl font-bold text-foreground mb-4'>
             Blog Not Found
           </h1>
@@ -41,7 +41,7 @@ export default function BlogDetailPage() {
   return (
     <main className='min-h-screen bg-background'>
       {/* Header with Home Button */}
-      <div className='sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border'>
+      {/* <div className='sticky top-20 w-40 lg:w-48 lg:top-26 z-40 bg-background/95 backdrop-blur-sm border-b border-border'>
         <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
           <Link
             href='/'
@@ -51,10 +51,10 @@ export default function BlogDetailPage() {
             Back to Home
           </Link>
         </div>
-      </div>
+      </div> */}
 
       {/* Blog Content */}
-      <article className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+      <article className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-26: lg:pt-32'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -231,6 +231,27 @@ export default function BlogDetailPage() {
           </div>
         </motion.div>
       </article>
+
+      <div className=' bg-background/95 flex justify-between backdrop-blur-sm  mb-20'>
+        <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
+          <Link
+            href='/blogs'
+            className='inline-flex items-center gap-2 border border-border p-5 text-white hover:text-white/80 transition-colors'
+          >
+            <ArrowLeft size={20} />
+            Back to all Blogs
+          </Link>
+        </div>
+        <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
+          <Link
+            href='/'
+            className='inline-flex items-center gap-2 border border-border p-5 text-white hover:text-white/80 transition-colors'
+          >
+            <ArrowLeft size={20} />
+            Back to Home
+          </Link>
+        </div>
+      </div>
     </main>
   )
 }

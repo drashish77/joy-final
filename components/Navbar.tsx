@@ -1,5 +1,5 @@
 'use client'
-import { MenuIcon, XIcon } from 'lucide-react'
+import { MenuIcon, XIcon, Phone } from 'lucide-react'
 import { PrimaryButton } from './Buttons'
 import { useState } from 'react'
 import { motion } from 'motion/react'
@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: 'Home', href: '/#' },
     { name: 'Services', href: '/#services' },
     // { name: 'Pricing', href: '/#pricing' },
-    { name: 'Blogs', href: '/blogs' },
+    { name: 'Blogs', href: '/#blogs' },
     { name: 'FAQ', href: '/#faq' }
   ]
 
@@ -51,7 +51,12 @@ export default function Navbar() {
             Sign in
           </button> */}
           <PrimaryButton className='max-sm:text-xs hidden sm:inline-block'>
-            Get Started
+            <div className='flex justify-center items-center'>
+              <Phone className='h-4 mr-2' />
+              <a href='tel:+918085733733' className='block text-lg'>
+                8085 733 733
+              </a>
+            </div>
           </PrimaryButton>
         </div>
 
@@ -77,7 +82,12 @@ export default function Navbar() {
           Sign in
         </button> */}
         <PrimaryButton onClick={() => setIsOpen(false)}>
-          Get Started
+          <div className='flex justify-center items-center'>
+            <Phone className='h-4 mr-2' />
+            <a href='tel:+918085733733' className='block text-lg'>
+              8085 733 733
+            </a>
+          </div>
         </PrimaryButton>
 
         <button

@@ -96,13 +96,13 @@ export default function Hero() {
                   delay: 0.2
                 }}
               >
-                Joy Dental is a modern, patient-focused dental clinic dedicated
-                to providing comprehensive, high-quality dental care for
-                patients. We combine advanced dental technology with a warm,
-                friendly environment to ensure comfortable and effective
-                treatment outcomes. At Joy Dental, we believe every smile
-                deserves personalized attention, ethical care, and long-lasting
-                results.
+                We are a modern, patient-focused dental clinic dedicated to
+                providing comprehensive, high-quality dental care for you. We
+                combine advanced dental technology with a warm, friendly
+                environment to ensure comfortable and effective treatment
+                outcomes.
+                {/* At Joy Dental, we believe every smile deserves
+                personalized attention, ethical care, and long-lasting results. */}
               </motion.p>
 
               <motion.div
@@ -125,10 +125,10 @@ export default function Hero() {
                   </PrimaryButton>
                 </a>
 
-                <GhostButton className='max-sm:w-full max-sm:justify-center py-3 px-5'>
+                {/* <GhostButton className='max-sm:w-full max-sm:justify-center py-3 px-5'>
                   <PlayIcon className='size-4' />
                   View our work
-                </GhostButton>
+                </GhostButton> */}
               </motion.div>
 
               <motion.div
@@ -161,7 +161,7 @@ export default function Hero() {
                   <div>
                     <div>with experience</div>
                     <div className='text-xs text-gray-400'>
-                      with 12 years of experience
+                      12+ years of experience
                     </div>
                   </div>
                 </div>
