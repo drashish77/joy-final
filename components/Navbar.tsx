@@ -25,11 +25,7 @@ export default function Navbar() {
     >
       <div className='max-w-6xl mx-auto flex items-center justify-between bg-black/50 backdrop-blur-md border border-white/4 rounded-2xl p-3'>
         <a href='/#'>
-          <img
-            src='/logo_short_white.svg'
-            alt='logo'
-            className='h-8 lg:hidden'
-          />
+          <img src='/logo_mobile.svg' alt='logo' className='h-8 lg:hidden' />
           <img
             src='/logo_black_1.svg'
             alt='logo'
