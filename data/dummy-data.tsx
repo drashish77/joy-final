@@ -195,17 +195,17 @@ export const items = [
   },
   {
     id: 4,
-    url: 'https://images.unsplash.com/photo-1683722319473-f851deb3fdf2?q=80&w=880&auto=format&fit=crop',
+    url: 'img/Invisalign1.jpg',
     title: 'Tranquil Lake Reflection'
   },
   {
     id: 5,
-    url: 'https://images.unsplash.com/photo-1560790671-b76ca4de55ef?q=80&w=734&auto=format&fit=crop',
+    url: 'img/Invisalign1.jpg',
     title: 'Misty Mountain Peaks'
   },
   {
     id: 6,
-    url: 'https://images.unsplash.com/photo-1698774303292-7af9410c3a57?q=80&w=436&auto=format&fit=cropv',
+    url: 'img/Invisalign1.jpg',
     title: 'Golden Hour Glow'
   },
   {
@@ -395,42 +395,42 @@ export const GalleryItems = [
   {
     id: 1,
     url: 'img/implant1.jpg',
-    title: 'Misty Mountain Majesty'
+    title: 'Implant Treatment'
   },
   {
     id: 2,
     url: 'img/implant2.jpg',
-    title: 'Winter Wonderland'
+    title: 'Implant Treatment'
   },
   {
     id: 3,
     url: 'img/Invisalign1.jpg',
-    title: 'Autumn Mountain Retreat'
+    title: 'Invisalign Treatment'
   },
   {
     id: 4,
-    url: 'https://images.unsplash.com/photo-1683722319473-f851deb3fdf2?q=80&w=880&auto=format&fit=crop',
-    title: 'Tranquil Lake Reflection'
+    url: 'img/beforeAfter/ba_composit.jpg',
+    title: 'Composite treatment'
   },
   {
     id: 5,
-    url: 'https://images.unsplash.com/photo-1560790671-b76ca4de55ef?q=80&w=734&auto=format&fit=crop',
-    title: 'Misty Mountain Peaks'
+    url: 'img/beforeAfter/ba_crown.jpg',
+    title: 'FPD crown'
   },
   {
     id: 6,
-    url: 'https://images.unsplash.com/photo-1698774303292-7af9410c3a57?q=80&w=436&auto=format&fit=cropv',
-    title: 'Golden Hour Glow'
+    url: 'img/beforeAfter/ba_crown2.jpg',
+    title: 'FPD Crown'
   },
   {
     id: 7,
-    url: 'https://images.unsplash.com/photo-1643994542584-1247b5266429?q=80&w=869&auto=format&fit=crop',
-    title: 'Snowy Mountain Highway'
+    url: 'img/beforeAfter/ba_crown3.jpg',
+    title: 'FPD crown'
   },
   {
     id: 8,
-    url: 'https://images.unsplash.com/photo-1613681230409-6423a38c43e1?q=80&w=871&auto=format&fit=crop',
-    title: 'Foggy Mountain Forest'
+    url: 'img/beforeAfter/ba_invasalign.jpg',
+    title: 'invisalign'
   }
 ]
 
@@ -438,17 +438,47 @@ export const GalleryItems = [
 export const blogs = [
   {
     id: 1,
-    slug: 'industry-leaders-predict',
-    title: 'Industry Leaders Predict the Future of Technology',
+    slug: 'missing-teeth',
+    title: 'Missing Teeth Still Bother You? How Dentists Decide the Next Step',
     excerpt:
       'Expert insights on where technology is heading in the next decade.',
-    category: 'Technology',
+    category: 'Prosthodontics',
     author: 'Sarah Johnson',
     date: '2024-01-15',
     image:
       'https://images.unsplash.com/photo-1560070201-d3d11effa179?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
-      'As we navigate through 2024, industry experts are sharing their predictions about the future of technology. From artificial intelligence to quantum computing, the landscape is rapidly evolving.\n\nKey areas of focus include:\n\n1. **Artificial Intelligence**: AI is becoming more accessible and practical for everyday applications.\n\n2. **Quantum Computing**: Major breakthroughs are expected in quantum computing within the next 3-5 years.\n\n3. **Sustainable Tech**: Green technology and energy-efficient solutions are becoming mainstream.\n\n4. **Cybersecurity**: With increased digital threats, cybersecurity remains a top priority.\n\nExpert Quote: "The convergence of AI and IoT will reshape how we interact with technology." - Tech Industry Leader\n\nThese predictions suggest that the next decade will be transformative for the entire tech industry.'
+      'Having missed or damaged teeth has more repercussions than aesthetics. Chewing is not even, speech is altered, smiling becomes conscious. Being in hope of adjusting, many people put off treatment. In case of the feeling of discomfort or confidence, patients begin seeking the best dental implant doctor in Indore to find out whether they should use implants or not or whether there are other alternatives. \n\n Love is new',
+    content2: {
+      subHeading:
+        'Having missed or damaged teeth has more repercussions than aesthetics. Chewing is not even, speech is altered, smiling becomes conscious. Being in hope of adjusting, many people put off treatment. In case of the feeling of discomfort or confidence, patients begin seeking the best dental implant doctor in Indore to find out whether they should use implants or not or whether there are other alternatives.',
+      section1: {
+        heading:
+          'The Prechecks that Dentists Carry Before Recommending Implants',
+        content:
+          'The use of dental implants is not recommended alone. When dentists determine the oral health, bone strength, and the bite position, they decide on the permanent solution. The talk with the Best Dentist in Indore makes the patients understand whether they are in the state where the implants can fit them, or they need to be prepared with the preliminary care. '
+      },
+      section2: {
+        heading: 'Symptoms That It is Time to seek the advice of an expert',
+        sentence: 'Symptoms That It is Time to seek the advice of an expert ',
+        points: {
+          1: 'Problems with one side of chewing',
+          2: 'Stagnant food occurs frequently.',
+          3: 'Jaw discomfort or clicking ',
+          4: 'Changes in facial structure ',
+          5: 'Less confidence while smiling. '
+        },
+        endSentence:
+          'The prompt analysis prevents sophisticated treatment in the future. '
+      },
+      section3: {
+        heading: 'The reason why Implants are not Rush ',
+        para1:
+          'The implants are perceived as a quick fix by many patients. As a matter of fact, well-designed planning enhances comfort and future achievements. The health of bones, condition of gums, and ability to heal are all important. Best dental implants in Indore are very stable and in case it is properly planned, it feels like a real tooth.',
+        para2:
+          'It is more about restoring balance than appearance to replace missing teeth. Patients take wise decisions rather than putting off treatment with the help of the best dental implant doctor in Indore. Implants enhance chewing, speech, and confidence when designed properly. Early treatment of dental gaps increases the safeguarding of oral health over the long-term and enables patients to smile and eat without fear. '
+      }
+    }
   },
   {
     id: 2,
@@ -462,7 +492,7 @@ export const blogs = [
     image:
       'https://images.unsplash.com/photo-1620775997780-a01e050a9db4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     content:
-      "Digital transformation is no longer optional—it's essential for businesses to survive and thrive. This comprehensive guide outlines the key steps to implement successful digital transformation.\n\n**Phase 1: Assessment**\nUnderstand your current state and identify gaps.\n\n**Phase 2: Strategy**\nDevelop a clear roadmap for your digital journey.\n\n**Phase 3: Implementation**\nExecute your plan with proper tools and team alignment.\n\n**Phase 4: Optimization**\nContinuously improve and adapt to market changes.\n\nSuccess factors include:\n- Leadership commitment\n- Employee training and adoption\n- Technology infrastructure\n- Data management and security\n- Customer-centric approach\n\nOrganizations that prioritize digital transformation are seeing 20-30% improvements in operational efficiency."
+      "Digital transformation\n- is no longer optional—it's essential\n for businesses to survive and thrive. This comprehensive guide outlines the key steps to implement successful digital transformation.\n\n**Phase 1: Assessment**\nUnderstand your current state and identify gaps.\n\n**Phase 2: Strategy**\nDevelop a clear roadmap for your digital journey.\n\n**Phase 3: Implementation**\nExecute your plan with proper tools and team alignment.\n\n**Phase 4: Optimization**\nContinuously improve and adapt to market changes.\n\nSuccess factors include:\n- Leadership commitment\n- Employee training and adoption\n- Technology infrastructure\n- Data management and security\n- Customer-centric approach\n\nOrganizations that prioritize digital transformation are seeing 20-30% improvements in operational efficiency."
   },
   {
     id: 3,
@@ -550,6 +580,20 @@ export const blogs = [
   },
   {
     id: 9,
+    slug: 'innovation-culture',
+    title: 'Building a Culture of Innovation in Your Organization',
+    excerpt:
+      'Foster creativity and innovation to stay ahead of the competition.',
+    category: 'Business',
+    author: 'Maria Gonzalez',
+    date: '2023-11-30',
+    image:
+      'https://images.unsplash.com/photo-1609207825181-52d3214556dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    content:
+      "Innovation drives business growth. Here's how to build a culture where innovation thrives.\n\n**Leadership Commitment**\n- Allocate resources for innovation\n- Model innovative thinking\n- Celebrate failures as learning opportunities\n\n**Empowering Teams**\n- Give autonomy in decision-making\n- Encourage experimentation\n- Provide continuous learning opportunities\n- Create diverse teams\n\n**Creating Safe Space**\n- Reduce fear of failure\n- Encourage bold ideas\n- Support unconventional thinking\n- Learn from setbacks\n\n**Structured Innovation**\n- Dedicated innovation time\n- Innovation workshops and brainstorming\n- Cross-functional collaboration\n- Clear evaluation criteria\n\n**External Collaboration**\n- Partner with startups\n- Attend industry conferences\n- Collaborate with universities\n- Engage with customer feedback\n\n**Measurement**\n- Track innovation metrics\n- Monitor adoption rates\n- Measure ROI\n- Celebrate successes\n\n**Examples of Innovation**\n- Process improvements\n- New products/services\n- Business model innovations\n- Technology adoption\n\nOrganizations that cultivate innovation consistently outperform competitors."
+  },
+  {
+    id: 10,
     slug: 'innovation-culture',
     title: 'Building a Culture of Innovation in Your Organization',
     excerpt:

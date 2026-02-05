@@ -1,6 +1,6 @@
 'use client'
-import Blogs from '@/components/Blogs'
-import Contact from '@/components/Contact'
+// import Blogs from '@/components/Blogs'
+// import Contact from '@/components/Contact'
 import CTA from '@/components/CTA'
 import Faq from '@/components/Faq'
 import Features from '@/components/Features'
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Features />
       <FramerMultiSlideCarousel />
-      <Blogs />
+      {/* <Blogs /> */}
       <Faq />
       <CTA />
     </>

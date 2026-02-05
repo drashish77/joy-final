@@ -27,7 +27,7 @@ export default function GalleryItemCarousel() {
   return (
     <div className='w-full lg:p-10 sm:p-4 p-2'>
       <Title
-        title='Services'
+        title='Gallery'
         heading='Experience the Joy of a Healthy Smile'
         description='From routine check-ups to advanced orthodontics and implants, we provide personalized dental solutions for every smile'
       />
@@ -68,8 +68,11 @@ export default function GalleryItemCarousel() {
             {GalleryItems.map((item) => (
               <div
                 key={item.id}
-                className='shrink-0 w-full h-[400px] md:h-[600px]'
+                className='shrink-0 w-full relative h-[400px] md:h-[600px]'
               >
+                <h1 className='absolute inset-0 capitalize  text-center font-bold text-black/70 text-2xl'>
+                  {item.title}
+                </h1>
                 <img
                   src={item.url}
                   alt={item.title}
@@ -88,7 +91,7 @@ export default function GalleryItemCarousel() {
               ${
                 index === 0
                   ? 'opacity-40 cursor-not-allowed'
-                  : 'bg-white hover:scale-110 hover:opacity-100 opacity-70'
+                  : 'bg-white text-black hover:scale-110 hover:opacity-100 opacity-70'
               }`}
           >
             <svg
@@ -112,7 +115,7 @@ export default function GalleryItemCarousel() {
             onClick={() =>
               setIndex((i) => Math.min(GalleryItems.length - 1, i + 1))
             }
-            className={`absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-transform z-10
+            className={`absolute right-4 top-1/2 text-black -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-transform z-10
               ${
                 index === GalleryItems.length - 1
                   ? 'opacity-40 cursor-not-allowed'

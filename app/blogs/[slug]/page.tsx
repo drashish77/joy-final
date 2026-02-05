@@ -116,7 +116,7 @@ export default function BlogDetailPage() {
                     className='list-disc list-inside space-y-2 text-muted-foreground mb-4'
                   >
                     {paragraph.split('\n').map((item, i) => (
-                      <li key={i} className='text-foreground'>
+                      <li key={i} className='text-foreground block'>
                         {item.replace('- ', '').replace(/\*\*/g, '')}
                       </li>
                     ))}
