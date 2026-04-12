@@ -33,6 +33,7 @@ export default function Footer() {
                       <li key={i}>
                         <a
                           href={link.url}
+                          target='blank'
                           className='hover:text-white transition'
                         >
                           {link.name}

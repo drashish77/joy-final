@@ -154,9 +154,10 @@ export const footerLinks = [
     title: 'Company',
     links: [
       { name: 'Home', url: '#' },
-      { name: 'Services', url: '#services' },
+      { name: 'About', url: '/about' },
+      { name: 'Services', url: '/#services' },
       { name: 'Blogs', url: '#blogs' },
-      { name: 'Contact', url: '#contact' }
+      { name: 'Contact', url: '/#contact' }
     ]
   },
   {
@@ -169,10 +170,10 @@ export const footerLinks = [
   {
     title: 'Connect',
     links: [
-      { name: 'Twitter', url: '#' },
-      { name: 'LinkedIn', url: '#' },
-      { name: 'instagram', url: '#' },
-      { name: 'facebook', url: '#' }
+      { name: 'Twitter / X', url: 'https://x.com/joyydent' },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/company/joyydent/' },
+      { name: 'instagram', url: 'https://www.instagram.com/joyydent/' },
+      { name: 'facebook', url: 'https://www.facebook.com/joyydent/' }
     ]
   }
 ]
