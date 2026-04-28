@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { motion } from 'motion/react'
 import { ArrowRight, Calendar, User } from 'lucide-react'
-import { blogs } from '@/data/dummy-data'
+import blogs from '../lib/data/blogsContent.json'
 
 export default function Blogs() {
   const displayedBlogs = blogs.slice(0, 6)
