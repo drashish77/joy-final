@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion } from 'motion/react'
 import { Calendar, User, ArrowLeft } from 'lucide-react'
 import { useState } from 'react'
-import { blogs } from '@/data/dummy-data'
+import blogs from '../../lib/data/blogsContent.json'
 
 export default function BlogsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)

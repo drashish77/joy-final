@@ -1,5 +1,6 @@
 import { Outfit, Cookie } from 'next/font/google'
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager, sendGTMEvent } from '@next/third-parties/google'
+
 import './globals.css'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
@@ -76,7 +77,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <GoogleTagManager gtmId='AW-999915710' />
+      <GoogleTagManager gtmId='AW-18097203202' />
       <body>
         <SoftBackdrop />
         <LenisScroll />

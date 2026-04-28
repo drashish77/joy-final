@@ -3,8 +3,158 @@
 import Link from 'next/link'
 import { motion } from 'motion/react'
 import { Calendar, User, ArrowLeft, ArrowRight } from 'lucide-react'
+import blogs from '../../../lib/data/blogsContent.json'
+
 import { useParams } from 'next/navigation'
-import { blogs } from '@/data/dummy-data'
+
+type ContentBlock = {
+  type:
+    | 'paragraph'
+    | 'heading'
+    | 'list'
+    | 'bulletList'
+    | 'numberedList'
+    | 'quote'
+    | 'image'
+  level?: number
+  text?: string
+  items?: Array<{ title?: string; text: string }> | string[]
+  author?: string
+  src?: string
+  alt?: string
+}
+
+// Component to render rich content blocks
+function ContentRenderer({ content }: { content: ContentBlock[] }) {
+  return (
+    <div className='space-y-6'>
+      {content.map((block, index) => {
+        switch (block.type) {
+          case 'paragraph':
+            return (
+              <p
+                key={index}
+                className='text-muted-foreground leading-relaxed text-lg'
+              >
+                {block.text}
+              </p>
+            )
+
+          case 'heading':
+            const headingClasses = {
+              2: 'text-4xl sm:text-5xl font-bold',
+              3: 'text-3xl sm:text-4xl font-bold',
+              4: 'text-2xl sm:text-3xl font-bold'
+            }
+            return (
+              <h2
+                key={index}
+                className={`${
+                  headingClasses[block.level as keyof typeof headingClasses] ||
+                  headingClasses[2]
+                } text-foreground mt-10 mb-6`}
+              >
+                {block.text}
+              </h2>
+            )
+
+          case 'bulletList':
+            return (
+              <ul key={index} className='space-y-3 pl-6'>
+                {(block.items as string[]).map((item, i) => (
+                  <li
+                    key={i}
+                    className='text-muted-foreground text-lg leading-relaxed list-disc'
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )
+
+          case 'list':
+            return (
+              <div key={index} className='space-y-4'>
+                {(block.items as Array<{ title?: string; text: string }>).map(
+                  (item, i) => (
+                    <div key={i}>
+                      {item.title && (
+                        <h3 className='font-bold text-foreground text-lg mb-2'>
+                          {item.title}
+                        </h3>
+                      )}
+                      <p className='text-muted-foreground leading-relaxed text-lg'>
+                        {item.text}
+                      </p>
+                    </div>
+                  )
+                )}
+              </div>
+            )
+
+          case 'numberedList':
+            return (
+              <ol key={index} className='space-y-4 pl-6'>
+                {(block.items as Array<{ title?: string; text: string }>).map(
+                  (item, i) => (
+                    <li key={i} className='list-decimal text-muted-foreground'>
+                      <div>
+                        {item.title && (
+                          <span className='font-bold text-foreground text-lg'>
+                            {item.title}
+                          </span>
+                        )}
+                        {item.title && (
+                          <span className='text-muted-foreground text-lg'>
+                            {' '}
+                            —{' '}
+                          </span>
+                        )}
+                        <span className='text-muted-foreground leading-relaxed text-lg'>
+                          {item.text}
+                        </span>
+                      </div>
+                    </li>
+                  )
+                )}
+              </ol>
+            )
+
+          case 'quote':
+            return (
+              <blockquote
+                key={index}
+                className='border-l-4 border-primary pl-6 py-4 my-8 bg-primary/5 rounded-r-lg'
+              >
+                <p className='text-lg italic text-foreground mb-3'>
+                  "{block.text}"
+                </p>
+                {block.author && (
+                  <p className='text-muted-foreground text-sm font-semibold'>
+                    — {block.author}
+                  </p>
+                )}
+              </blockquote>
+            )
+
+          case 'image':
+            return (
+              <div key={index} className='my-8 rounded-xl overflow-hidden'>
+                <img
+                  src={block.src || '/placeholder.svg'}
+                  alt={block.alt || 'Blog image'}
+                  className='w-full h-auto'
+                />
+              </div>
+            )
+
+          default:
+            return null
+        }
+      })}
+    </div>
+  )
+}
 
 export default function BlogDetailPage() {
   const params = useParams()
@@ -19,12 +169,12 @@ export default function BlogDetailPage() {
   if (!blog) {
     return (
       <main className='min-h-screen bg-background flex items-center justify-center'>
-        <div className='text-center '>
+        <div className='text-center'>
           <h1 className='text-3xl font-bold text-foreground mb-4'>
             Blog Not Found
           </h1>
           <p className='text-muted-foreground mb-6'>
-            The blog you're looking for doesn't exist.
+            The blog you&apos;re looking for doesn&apos;t exist.
           </p>
           <Link
             href='/blogs'
@@ -41,7 +191,7 @@ export default function BlogDetailPage() {
   return (
     <main className='min-h-screen bg-background'>
       {/* Header with Home Button */}
-      {/* <div className='sticky top-20 w-40 lg:w-48 lg:top-26 z-40 bg-background/95 backdrop-blur-sm border-b border-border'>
+      <div className='sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border'>
         <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
           <Link
             href='/'
@@ -51,17 +201,17 @@ export default function BlogDetailPage() {
             Back to Home
           </Link>
         </div>
-      </div> */}
+      </div>
 
       {/* Blog Content */}
-      <article className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-26: lg:pt-32'>
+      <article className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           {/* Hero Image */}
-          <div className='mb-8 rounded-xl overflow-hidden h-96 bg-muted'>
+          <div className='mb-10 rounded-xl overflow-hidden h-96 bg-muted'>
             <img
               src={blog.image || '/placeholder.svg'}
               alt={blog.title}
@@ -70,7 +220,7 @@ export default function BlogDetailPage() {
           </div>
 
           {/* Metadata */}
-          <div className='flex flex-wrap items-center gap-4 mb-6 pb-6 border-b border-border'>
+          <div className='flex flex-wrap items-center gap-4 mb-8 pb-6 border-b border-border'>
             <span className='inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full'>
               {blog.category}
             </span>
@@ -89,67 +239,19 @@ export default function BlogDetailPage() {
           </div>
 
           {/* Title */}
-          <h1 className='text-4xl sm:text-5xl font-bold text-foreground mb-6'>
+          <h1 className='text-5xl sm:text-6xl font-bold text-foreground mb-8 leading-tight'>
             {blog.title}
           </h1>
 
-          {/* Content */}
+          {/* Rich Content */}
           <div className='prose prose-invert max-w-none mb-12'>
-            {blog.content.split('\n\n').map((paragraph, index) => {
-              // Check if this paragraph is a heading
-              if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                return (
-                  <h2
-                    key={index}
-                    className='text-2xl font-bold text-foreground mt-8 mb-4'
-                  >
-                    {paragraph.replace(/\*\*/g, '')}
-                  </h2>
-                )
-              }
-
-              // Check if this is a list
-              if (paragraph.split('\n').every((line) => line.startsWith('-'))) {
-                return (
-                  <ul
-                    key={index}
-                    className='list-disc list-inside space-y-2 text-muted-foreground mb-4'
-                  >
-                    {paragraph.split('\n').map((item, i) => (
-                      <li key={i} className='text-foreground block'>
-                        {item.replace('- ', '').replace(/\*\*/g, '')}
-                      </li>
-                    ))}
-                  </ul>
-                )
-              }
-
-              // Check if this is a numbered list
-              if (paragraph.split('\n').every((line) => /^\d+\./.test(line))) {
-                return (
-                  <ol
-                    key={index}
-                    className='list-decimal list-inside space-y-2 text-muted-foreground mb-4'
-                  >
-                    {paragraph.split('\n').map((item, i) => (
-                      <li key={i} className='text-foreground'>
-                        {item.replace(/^\d+\.\s*/, '').replace(/\*\*/g, '')}
-                      </li>
-                    ))}
-                  </ol>
-                )
-              }
-
-              // Regular paragraph
-              return (
-                <p
-                  key={index}
-                  className='text-muted-foreground leading-relaxed mb-4'
-                >
-                  {paragraph.replace(/\*\*/g, '')}
-                </p>
-              )
-            })}
+            {Array.isArray(blog.content) ? (
+              <ContentRenderer content={blog.content as ContentBlock[]} />
+            ) : (
+              <p className='text-muted-foreground leading-relaxed text-lg'>
+                {blog.content}
+              </p>
+            )}
           </div>
         </motion.div>
 
@@ -200,7 +302,7 @@ export default function BlogDetailPage() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className='mt-16'
         >
-          <h2 className='text-3xl font-bold text-foreground mb-8'>
+          <h2 className='text-4xl font-bold text-foreground mb-8'>
             More Blogs
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
@@ -231,27 +333,6 @@ export default function BlogDetailPage() {
           </div>
         </motion.div>
       </article>
-
-      <div className=' bg-background/95 flex justify-between backdrop-blur-sm  mb-20'>
-        <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
-          <Link
-            href='/blogs'
-            className='inline-flex items-center gap-2 border border-border p-5 text-white hover:text-white/80 transition-colors'
-          >
-            <ArrowLeft size={20} />
-            Back to all Blogs
-          </Link>
-        </div>
-        <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
-          <Link
-            href='/'
-            className='inline-flex items-center gap-2 border border-border p-5 text-white hover:text-white/80 transition-colors'
-          >
-            <ArrowLeft size={20} />
-            Back to Home
-          </Link>
-        </div>
-      </div>
     </main>
   )
 }
