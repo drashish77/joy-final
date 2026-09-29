@@ -129,7 +129,7 @@ export default function TeamPage() {
             </p>
           </motion.div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+          <div className='grid grid-cols-1  lg:grid-cols-2 gap-8'>
             {teamMembers.map((member, index) => (
               <motion.div
                 key={index}
@@ -139,7 +139,7 @@ export default function TeamPage() {
                 viewport={{ once: true }}
                 className='bg-card rounded-xl overflow-hidden border border-border hover:border-primary/50 transition-all group'
               >
-                <div className='relative overflow-hidden h-64 md:h-48 bg-muted'>
+                <div className='relative overflow-hidden h-64 md:h-96 bg-muted'>
                   <img
                     src={member.image}
                     alt={member.name}
@@ -463,76 +463,6 @@ export default function TeamPage() {
                 ))}
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section className='py-20 bg-primary/5'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className='text-center mb-16'
-          >
-            <h2 className='text-4xl font-bold text-foreground mb-4'>
-              Why Choose joy dental?
-            </h2>
-            <p className='text-muted-foreground text-lg'>
-              What sets us apart from other dental clinics
-            </p>
-          </motion.div>
-
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto'>
-            {[
-              {
-                title: 'Advanced Technology',
-                desc: 'State-of-the-art equipment and digital imaging for precise diagnoses'
-              },
-              {
-                title: 'Experienced Team',
-                desc: 'Dentists with 12+ combined years of expertise and specialized training'
-              },
-              {
-                title: 'Patient Comfort',
-                desc: 'Pain-free treatments with sedation options and a welcoming environment'
-              },
-              {
-                title: 'Affordable Care',
-                desc: 'Flexible payment plans and insurance accepted for quality care'
-              },
-              {
-                title: 'Comprehensive Services',
-                desc: 'From routine cleanings to complex implants and cosmetic procedures'
-              },
-              {
-                title: 'Personalized Plans',
-                desc: 'Custom treatment plans tailored to your unique dental needs'
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className='flex gap-4'
-              >
-                <div className='flex-shrink-0'>
-                  <div className='flex items-center justify-center h-12 w-12 rounded-md bg-primary/20'>
-                    <Smile className='h-6 w-6 text-primary' />
-                  </div>
-                </div>
-                <div>
-                  <h3 className='text-lg font-bold text-foreground mb-1'>
-                    {item.title}
-                  </h3>
-                  <p className='text-muted-foreground'>{item.desc}</p>
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
