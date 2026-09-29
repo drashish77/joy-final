@@ -130,21 +130,21 @@ export const faqData = [
   },
   {
     id: 5,
-    question: 'How long does a typical project take?',
+    question: 'How long does a typical RCT take?',
     answer:
-      'Project timelines vary by scope, but most projects take between 2–6 weeks. We provide a clear timeline after the discovery phase.'
+      'RCT contains 6 steps, and the gaps between these steps depends on the infection of the tooth, so minimum it will take around 5-20 days'
   },
   {
     id: 6,
     question: 'What types of braces does joy Dental offer?',
     answer:
-      'Yes. We offer maintenance, optimization and growth support packages to ensure your product continues to perform and evolve.'
+      'Yes. We offer all kind of braces (Ceramic or invisible to metal) including aligners.'
   },
   {
     id: 7,
     question: 'What safety measures are in place at Joy Dental clinics?',
     answer:
-      'At Joy Dental, we have 10x safety protocols, radiation safety, and a 4-step sterilization process for instruments. We use AI-enhanced DORI protocols for sterilization compliance.'
+      'At Joy Dental, we have 10x safety protocols, radiation safety, and a 4-step sterilization process for instruments. We use UV autoclave and UV chamber for our instruments sterilization'
   }
 ]
 
