@@ -244,6 +244,10 @@ export default function TeamPage() {
                       <strong>MBA</strong> – IIHMR, Jaipur (WHO-recognized)
                     </span>
                   </li>
+                  <li className='flex items-start gap-2'>
+                    <CheckCircle className='w-5 h-5 text-primary flex-shrink-0 mt-0.5' />
+                    <span>12+ years of clinical experience</span>
+                  </li>
                 </ul>
               </div>
 
@@ -255,18 +259,14 @@ export default function TeamPage() {
                 className='space-y-4 text-muted-foreground leading-relaxed'
               >
                 <ul>
-                  <li>10</li>
-                  <li>10</li>
-                </ul>
-                <ul>
                   <li>
-                    With <strong>12+ years of clinical experience</strong> in
+                    👉 With <strong>12+ years of clinical experience</strong> in
                     dentistry, Dr. Ashish Gupta has been dedicated to delivering
                     comprehensive, patient-centric dental care with a focus on
                     precision, trust, and long-term oral health.
                   </li>
                   <li>
-                    He completed his graduation from the prestigious Government
+                    👉 Graduation from the prestigious and only Government
                     Dental College, Indore, one of the most respected
                     institutions in the state, and further strengthened his
                     professional expertise by pursuing an MBA from IIHMR,
@@ -274,7 +274,7 @@ export default function TeamPage() {
                     institute.
                   </li>
                   <li>
-                    His combination of clinical expertise and healthcare
+                    👉 His combination of clinical expertise and healthcare
                     management knowledge enables the clinic to maintain the
                     highest standards of patient care, treatment planning, and
                     modern dental practice management.
@@ -491,7 +491,7 @@ export default function TeamPage() {
                 Schedule Appointment
               </Link>
               <Link
-                href='/#services'
+                href='/#treatments'
                 className='px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors'
               >
                 Explore Services

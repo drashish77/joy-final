@@ -155,7 +155,7 @@ export const footerLinks = [
       { name: 'Home', url: '#' },
       { name: 'Team', url: '/team' },
       { name: 'About', url: '/about' },
-      { name: 'Services', url: '/#services' },
+      { name: 'Treatments', url: '/#treatments' },
       { name: 'Blogs', url: '#blogs' },
       { name: 'Contact', url: '/#contact' }
     ]

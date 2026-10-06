@@ -771,7 +771,7 @@ export default function AboutPage() {
                 Schedule Appointment
               </Link>
               <Link
-                href='/#services'
+                href='/#treatments'
                 className='px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors'
               >
                 Explore Services

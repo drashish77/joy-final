@@ -6,10 +6,10 @@ import { motion } from 'motion/react'
 export default function Features() {
   const refs = useRef<(HTMLDivElement | null)[]>([])
   return (
-    <section id='services' className='py-20 2xl:py-32'>
+    <section id='treatments' className='py-20 2xl:py-32'>
       <div className='max-w-6xl mx-auto px-4'>
         <Title
-          title='Services'
+          title='Treatments'
           heading='Experience the Joy of a Healthy Smile'
           description='From routine check-ups to advanced orthodontics and implants, we provide personalized dental solutions for every smile'
         />
