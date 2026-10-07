@@ -64,7 +64,7 @@
         "category": "Dental Treatment",
         "author": "Dr. Ashish Gupta",
         "date": "2026-04-17",
-        "image": "https://images.unsplash.com/photo-1588776814546-ec7e0dcd5b71?q=80&w=2070&auto=format&fit=crop",
+        "image": "/img/rct_steps.jpg",
         "content": [
           {
             "type": "paragraph",
@@ -198,184 +198,91 @@
     ]
   },
   {
-    "id": 2,
-    "slug": "rct",
-    "title": "Root Canal Treatment",
-    "excerpt": "How ashish can successfully transform their operations in the digital age.",
-    "category": "Endodontics",
-    "author": "Michael Chen",
-    "date": "2024-01-10",
-    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+    "id": 3,
+    "slug": "wisdom-tooth",
+    "title": "Wisdom Tooth Removal",
+    "excerpt": "Everything you need to know about Wisdom Tooth Removal",
+    "category": "Oral Surgery",
+    "author": "Dr. Ashish Gupta",
+    "date": "2026-01-10",
+    "image": "/img/wisdom_tooth.jpg",
     "content": [
       {
         "type": "paragraph",
-        "text": "A root canal treatment clears infection from inside your tooth’s pulp, often resulting from deep cavities or cracks. If you notice pain, swelling or a boil on your gums, it could be time to see your dentist. Root canals are common and help save your natural tooth."
+        "text": "Wisdom teeth – those late bloomers in our mouths that can sometimes cause quite a stir! At Joy Dental Care, we understand the importance of taking care of your oral health, including the sometimes necessary wisdom tooth removal. Let’s dive into the world of wisdom teeth, why they should be removed, and how to care for yourself after the procedure."
       },
       {
         "type": "heading",
         "level": 1,
-        "text": "Overview"
+        "text": "Understanding Wisdom Teeth"
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "What is a root canal?"
+        "text": "The Essentials"
       },
       {
         "type": "paragraph",
-        "text": "A root canal is a procedure that removes infected pulp from inside your tooth. Your dentist cleans and seals the canals to prevent further damage and save your tooth. You might need root canal treatment if bacteria reach the pulp and cause pain or inflammation."
+        "text": "First things first, what exactly is a wisdom tooth? Well, these are the third molars located at the back of your mouth. They usually start coming in during your late teens or early twenties, which is why they’re often called “wisdom teeth.” However, they don’t always bring wisdom; in fact, they can be quite troublesome!"
       },
-      { "type": "paragraph", "text": "This can happen if:" },
+      { "type": "paragraph", "text": "Why Should Wisdom Teeth Be Removed?" },
       {
         "type": "bulletList",
         "items": [
-          "You have a deep cavity",
-          "You have a cracked or fractured tooth"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Root canals are common. Good oral hygiene can help you avoid needing one."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "How do I know if I need this procedure?"
-      },
-      {
-        "type": "paragraph",
-        "text": "You might not notice an infected tooth at first, but root canal symptoms might include:"
-      },
-      {
-        "type": "bulletList",
-        "items": [
-          "A pimple or boil on your gums that may ooze pus",
-          "A swollen jaw from a trapped infection",
-          "Darkened tooth color",
-          "Loose tooth from infection weakening nearby bone",
-          "Pain that spreads to your jaw, face or nearby teeth",
-          "Pain when chewing or touching the tooth",
-          "Tender or swollen gums"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "If you have root canal pain, don’t wait. Treatment can relieve pain, save your tooth and prevent the infection from spreading. Your dentist can help you decide if it’s the right option for you."
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Procedure Details"
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "How should I prepare for root canal treatment?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Before treatment, your provider will examine your tooth with X-rays and other tests to confirm the infection. They may:"
-      },
-      {
-        "type": "bulletList",
-        "items": [
-          "Ask if it hurts when you bite down",
-          "Check for swelling in your gums or bone",
-          "Gently tap your tooth or apply hot/cold to check sensitivity",
-          "Use an electric pulp test (EPT) to see if the pulp is alives"
-        ]
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "What happens during a root canal procedure?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Your dentist or endodontist will:"
-      },
-      {
-        "type": "numberedList",
-        "items": [
-          {
-            "text": "Numb the area with anesthesia (if you’re nervous, you may get medication to help you relax, and you might be drowsy after)"
-          },
-          {
-            "text": "Place cotton or a dental dam to keep the area clean and dry during the procedure"
-          },
-          {
-            "text": "Create a small hole in your tooth’s crown to reach the pulp."
-          },
-          { "text": "Remove the infected pulp using tiny tools" },
-          { "text": "Clean and disinfect the inside of the tooth" },
-          {
-            "text": "Fill the empty space with a rubbery dental material (gutta-percha)"
-          },
-          { "text": "Seal the tooth with a temporary filling" },
-          {
-            "text": "Remove temporary filling and fill Permanent filling and do tooth trimming for the cap"
-          },
-          {
-            "text": "Place a permanent crown (usually at a later visit) to protect your tooth and restore your bite"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Most root canals take about 60 to 90 minutes. Some may require more than one visit."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "What happens after root canal treatment?"
-      },
-      {
-        "type": "paragraph",
-        "text": "You’ll rest briefly in the office after your procedure. You’ll likely have two more appointments: one to prepare for your crown and one to place it."
-      },
-      {
-        "type": "heading",
-        "level": 2,
-        "text": "Risks / Benefits"
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "What are the benefits of root canal treatment?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Most root canals are successful and can last for many years — often a lifetime. They can::"
-      },
-      {
-        "type": "bulletList",
-        "items": [
-          "Remove infection",
-          "Prevent the infection from spreading or damaging your jawbone",
-          "Save your natural tooth"
+          "Limited Space: Most of us simply don’t have enough room in our mouths for these extra molars. As a result, wisdom teeth often become impacted, which means they can’t fully emerge or grow in the right direction.",
+          "Pain and Discomfort: Impacted wisdom teeth can lead to pain, swelling, and even infection. They can push against your other teeth, causing alignment issues and discomfort.",
+          "Risk of Cysts: In some cases, cysts can develop around impacted wisdom teeth. These cysts can damage surrounding bone and tissue.",
+          "Tooth Decay: Due to their location at the back of the mouth, wisdom teeth can be challenging to clean properly. This can lead to tooth decay and gum disease.",
+          "Orthodontic Problems: Wisdom teeth can exert pressure on your other teeth, potentially undoing the work of braces or other orthodontic treatments."
         ]
       },
 
       {
         "type": "heading",
         "level": 3,
-        "text": "What are the risks or complications of this procedure?"
+        "text": "The Importance of Wisdom Tooth Removal"
       },
       {
         "type": "paragraph",
-        "text": "Sometimes, root canals don’t work if the damage is too severe. If that happens, your provider may:"
+        "text": "When it comes to wisdom tooth removal, you want the best care possible. That’s where Dr. Ashish Gupta and our team at Joy Dental Care come in. We understand that dental procedures can be daunting, so we prioritize your comfort and well-being."
+      },
+      {
+        "type": "paragraph",
+        "text": "We aim to make the process as painless and quick as possible, so you can get back to your daily life with a smile."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Caring for Yourself After Wisdom Tooth Extraction"
+      },
+      {
+        "type": "paragraph",
+        "text": "After your wisdom tooth removal at Joy And Dental Care, it’s essential to take good care of yourself for a smooth recovery."
       },
       {
         "type": "bulletList",
         "items": [
-          "Re-treat the tooth with another root canal",
-          "Remove the tooth and replace it with an implant or bridge"
+          "Rest: Give your body the rest it needs to heal. Avoid strenuous activities for a few days.",
+          "Ice Packs: Applying ice packs to the outside of your cheek can help reduce swelling.",
+          "Pain Management: Your Dentist will prescribe pain medication if needed. Take it as directed.",
+          "Soft Diet: Stick to soft, easy-to-chew foods like soup, yogurt, and mashed potatoes for the first few days.",
+          "Oral Hygiene: Gently rinse your mouth with warm saltwater after meals and before bed. Be careful not to disturb the surgical site.",
+          "No Smoking or Alcohol: Avoid smoking and alcohol during your recovery, as they can hinder the healing process.",
+          "Follow-Up: Attend your follow-up appointments with Dr. Shetty for a thorough check-up and guidance on your recovery progress."
         ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Remember, wisdom tooth removal is a common procedure, and you’re not alone in this journey. At Roosh Advanced Laser And Dental Care, we’re here to support you every step of the way."
+      },
+      {
+        "type": "paragraph",
+        "text": "Don’t let those pesky wisdom teeth cause you discomfort any longer. Contact us today at joy Dental Care in Indore, and let Dr. Ashish Gupta and her expert team take care of your oral health with precision and compassion. Your smile is our priority!."
       }
     ]
   },
   {
-    "id": 3,
+    "id": 34,
     "slug": "web-design-trends-2024",
     "title": "Top Web Design Trends for 2024",
     "excerpt": "Discover the most impactful web design trends that will dominate 2024.",
