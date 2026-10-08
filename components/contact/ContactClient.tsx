@@ -20,8 +20,8 @@ const treatments = [
   'Gum Treatment',
   'Wisdom Tooth Surgery',
   'Teeth Whitening',
-  'Other / Not sure',
-];
+  'Other / Not sure '
+]
 
 export default function ContactClient() {
   const root = useRef<HTMLDivElement>(null);

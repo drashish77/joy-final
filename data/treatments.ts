@@ -181,6 +181,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       },
       {
         slug: 'removable-partial-denture',
+        image: '/img/Partial-Dentures-featured.jpg',
         title: 'Removable Partial Dentures',
         category: 'Prosthodontics',
         short: 'A removable option for replacing multiple missing teeth.',
