@@ -1,13 +1,16 @@
 'use client'
 
-import Link from 'next/link'
-import { useLayoutEffect, useRef } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import type { Treatment, TreatmentCategory } from '@/data/treatments'
 import Image from 'next/image'
-
-gsap.registerPlugin(ScrollTrigger)
+import Link from 'next/link'
+import { useRef } from 'react'
+import type { Treatment, TreatmentCategory } from '@/data/treatments'
+import {
+  SectionHeading,
+  TreatmentActions,
+  TreatmentBreadcrumbs,
+  TreatmentCta
+} from '@/components/treatments/TreatmentShared'
+import { useTreatmentAnimations } from '@/hooks/useTreatmentAnimations'
 
 type Props = {
   treatment: Treatment
@@ -22,61 +25,22 @@ export default function TreatmentDetailClient({
 }: Props) {
   const root = useRef<HTMLElement>(null)
 
-  useLayoutEffect(() => {
-    if (!root.current) return
-    const ctx = gsap.context(() => {
-      gsap.from('.td-reveal', {
-        y: 35,
-        opacity: 0,
-        duration: 0.85,
-        stagger: 0.08,
-        ease: 'power3.out'
-      })
-
-      gsap.utils.toArray<HTMLElement>('.td-scroll').forEach((el) => {
-        gsap.from(el, {
-          y: 45,
-          opacity: 0,
-          duration: 0.9,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: el, start: 'top 84%', once: true }
-        })
-      })
-
-      gsap.to('.td-hero-art', {
-        yPercent: 10,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: '.td-hero',
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true
-        }
-      })
-    }, root)
-
-    return () => ctx.revert()
-  }, [])
+  useTreatmentAnimations(root, {
+    revealSelector: '.td-reveal',
+    scrollSelector: '.td-scroll',
+    parallax: { target: '.td-hero-art', trigger: '.td-hero' }
+  })
 
   return (
     <main ref={root} className='overflow-hidden bg-[#f7f7f2] text-[#17211d]'>
       {/* Breadcrumb + hero */}
       <section className='td-hero relative min-h-[760px] px-6 pb-20 pt-28 md:px-10 md:pt-36 lg:px-16'>
         <div className='mx-auto max-w-7xl'>
-          <nav
-            className='td-reveal flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#7a837e]'
-            aria-label='Breadcrumb'
-          >
-            <Link href='/' className='hover:text-[#17211d]'>
-              Home
-            </Link>
-            <span>/</span>
-            <Link href='/treatments' className='hover:text-[#17211d]'>
-              Treatments
-            </Link>
-            <span>/</span>
-            <span>{treatment.title}</span>
-          </nav>
+          <TreatmentBreadcrumbs
+            category={category}
+            current={treatment.title}
+            className='td-reveal'
+          />
 
           <div className='grid items-end gap-12 pt-16 lg:grid-cols-[1fr_0.72fr] lg:pt-24'>
             <div>
@@ -85,7 +49,12 @@ export default function TreatmentDetailClient({
                   Chapter {category.number}
                 </span>
                 <span className='h-px w-14 bg-[#c8cec9]' />
-                <span className='text-sm text-[#7a837e]'>{category.title}</span>
+                <Link
+                  href={`/treatments/category/${category.slug}`}
+                  className='text-sm text-[#7a837e] hover:text-[#17211d]'
+                >
+                  {category.title}
+                </Link>
               </div>
               <h1 className='td-reveal max-w-5xl text-[clamp(3.5rem,8.5vw,8.5rem)] font-medium leading-[0.86] tracking-[-0.065em]'>
                 {treatment.title}
@@ -93,39 +62,25 @@ export default function TreatmentDetailClient({
               <p className='td-reveal mt-9 max-w-2xl text-lg leading-8 text-[#66736d] md:text-xl'>
                 {treatment.short}
               </p>
-              <div className='td-reveal mt-9 flex flex-wrap gap-3'>
-                <Link
-                  href='/contact'
-                  className='rounded-full bg-[#17211d] px-6 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5'
-                >
-                  Book a consultation <span className='ml-2'>↗</span>
-                </Link>
-                <a
-                  href='https://wa.me/918085733733'
-                  target='_blank'
-                  rel='noreferrer'
-                  className='rounded-full border border-[#cfd5d0] bg-white/40 px-6 py-3.5 text-sm font-semibold transition hover:bg-white'
-                >
-                  WhatsApp us
-                </a>
-              </div>
+              <TreatmentActions revealClass='td-reveal mt-9' />
             </div>
 
-            <div className='td-reveal relative h-90 overflow-hidden rounded-4xl bg-[#dfe4de] md:h-107.5 lg:h-125'>
-              <div className='td-hero-art absolute inset-[-10%] bg-[radial-gradient(circle_at_65%_35%,rgba(255,255,255,.95),transparent_28%),radial-gradient(circle_at_30%_70%,rgba(154,107,80,.28),transparent_34%),linear-gradient(135deg,#eef0e9,#cfd7d0)]' />
-              <div className='absolute inset-0 bg-gradient-to-t from-[#17211d]/35 via-transparent to-white/10' />
+            <div className='td-reveal love relative h-[360px] overflow-hidden rounded-[2rem] bg-[#dfe4de] md:h-[430px] lg:h-[500px]'>
+              <Image
+                src={treatment.image ?? '/img/rct_steps.jpg'}
+                alt={`${treatment.title} at Joy Dental`}
+                fill
+                priority
+                sizes='(max-width: 1024px) 100vw, 42vw'
+                className='td-hero-art object-cover'
+              />
+              <div className='absolute inset-0 bg-gradient-to-t from-[#17211d]/45 via-transparent to-white/10' />
               <div className='absolute bottom-7 left-7 right-7 flex items-end justify-between text-white'>
-                <Image
-                  src={category.imgUrl}
-                  width={700}
-                  height={1000}
-                  alt='Picture of the author'
-                />
+                <span className='text-xs uppercase tracking-[.22em]'>
+                  Joy Dental · Indore
+                </span>
+                <span className='text-4xl font-light'>{category.number}</span>
               </div>
-              {/* <span className='text-xs uppercase tracking-[.22em] border'>
-                Joy Dental · Indore
-              </span>
-              <span className='text-4xl font-light'>{category.number}</span> */}
             </div>
           </div>
         </div>
@@ -157,19 +112,12 @@ export default function TreatmentDetailClient({
       {/* Highlights */}
       <section className='px-6 py-20 md:px-10 md:py-28 lg:px-16'>
         <div className='mx-auto max-w-7xl'>
-          <div className='td-scroll mb-12 flex items-end justify-between gap-8'>
-            <div>
-              <p className='mb-4 text-xs font-semibold uppercase tracking-[.25em] text-[#9a6b50]'>
-                What to expect
-              </p>
-              <h2 className='max-w-2xl text-4xl tracking-[-.04em] md:text-6xl'>
-                Care planned around you.
-              </h2>
-            </div>
-            <span className='hidden text-sm text-[#7a837e] md:block'>
-              01 — {String(treatment.highlights.length).padStart(2, '0')}
-            </span>
-          </div>
+          <SectionHeading
+            className='td-scroll'
+            eyebrow='What to expect'
+            title='Care planned around you.'
+            count={`01 — ${String(treatment.highlights.length).padStart(2, '0')}`}
+          />
 
           <div className='grid border-t border-[#cfd5d0] md:grid-cols-2 lg:grid-cols-4'>
             {treatment.highlights.map((item, i) => (
@@ -313,36 +261,11 @@ export default function TreatmentDetailClient({
       )}
 
       {/* CTA */}
-      <section className='bg-[#17211d] px-6 py-20 text-white md:px-10 md:py-28 lg:px-16'>
-        <div className='td-scroll mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_auto] lg:items-end'>
-          <div>
-            <p className='mb-5 text-xs font-semibold uppercase tracking-[.25em] text-[#d3a98f]'>
-              Joy Dental · Indore
-            </p>
-            <h2 className='max-w-3xl text-4xl leading-[1] tracking-[-.045em] md:text-7xl'>
-              Not sure if this is the right treatment?
-            </h2>
-            <p className='mt-7 max-w-xl text-base leading-7 text-white/65'>
-              Start with a consultation. We’ll examine your dental health and
-              help you understand the options available for your smile.
-            </p>
-          </div>
-          <div className='flex flex-wrap gap-3'>
-            <Link
-              href='/contact'
-              className='rounded-full bg-white px-7 py-4 text-sm font-semibold text-[#17211d]'
-            >
-              Book an appointment ↗
-            </Link>
-            <a
-              href='tel:+918085733733'
-              className='rounded-full border border-white/20 px-7 py-4 text-sm font-semibold text-white'
-            >
-              Call 8085 733 733
-            </a>
-          </div>
-        </div>
-      </section>
+      <TreatmentCta
+        className='td-scroll'
+        title='Not sure if this is the right treatment?'
+        description='Start with a consultation. We’ll examine your dental health and help you understand the options available for your smile.'
+      />
     </main>
   )
 }

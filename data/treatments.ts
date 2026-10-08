@@ -15,13 +15,13 @@ export type TreatmentCategory = {
   title: string
   description: string
   treatments: Treatment[]
-  imgUrl: string
+  image?: string
 }
 
 export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '01',
-    imgUrl: '/img/rct_steps.jpg',
+    image: '/img/rct_steps.jpg',
     slug: 'general-dentistry',
     title: 'General & Preventive Dentistry',
     description:
@@ -87,7 +87,6 @@ export const treatmentCategories: TreatmentCategory[] = [
   },
   {
     number: '02',
-    imgUrl: '/img/rct_steps.jpg',
     slug: 'root-canal-treatment',
     title: 'Root Canal & Tooth Saving',
     description:
@@ -111,14 +110,6 @@ export const treatmentCategories: TreatmentCategory[] = [
           {
             q: 'Does a root canal hurt?',
             a: 'The procedure is performed with local anaesthesia. Some tenderness can occur afterward, but your dentist will guide you through aftercare.'
-          },
-          {
-            q: 'Does a root canal hurt?',
-            a: 'The procedure is performed with local anaesthesia. Some tenderness can occur afterward, but your dentist will guide you through aftercare.'
-          },
-          {
-            q: 'Does a root canal hurt?',
-            a: 'The procedure is performed with local anaesthesia. Some tenderness can occur afterward, but your dentist will guide you through aftercare.'
           }
         ]
       }
@@ -126,7 +117,6 @@ export const treatmentCategories: TreatmentCategory[] = [
   },
   {
     number: '03',
-    imgUrl: '/img/rct_steps.jpg',
     slug: 'crowns-bridges-dentures',
     title: 'Crowns, Bridges & Dentures',
     description:
@@ -198,7 +188,6 @@ export const treatmentCategories: TreatmentCategory[] = [
   },
   {
     number: '04',
-    imgUrl: '/img/rct_steps.jpg',
     slug: 'orthodontics',
     title: 'Orthodontics & Clear Aligners',
     description:
@@ -250,7 +239,6 @@ export const treatmentCategories: TreatmentCategory[] = [
   },
   {
     number: '05',
-    imgUrl: '/img/rct_steps.jpg',
     slug: 'gum-treatment',
     title: 'Gum Treatment',
     description:
@@ -281,7 +269,6 @@ export const treatmentCategories: TreatmentCategory[] = [
   },
   {
     number: '06',
-    imgUrl: '/img/rct_steps.jpg',
     slug: 'oral-surgery',
     title: 'Extractions & Oral Surgery',
     description:
@@ -327,7 +314,6 @@ export const treatmentCategories: TreatmentCategory[] = [
   },
   {
     number: '07',
-    imgUrl: '/img/rct_steps.jpg',
     slug: 'cosmetic-dentistry',
     title: 'Cosmetic & Smile Dentistry',
     description:
@@ -358,7 +344,6 @@ export const treatmentCategories: TreatmentCategory[] = [
   },
   {
     number: '08',
-    imgUrl: '/img/rct_steps.jpg',
     slug: 'childrens-dentistry',
     title: "Children's Dentistry",
     description:
