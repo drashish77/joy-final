@@ -21,7 +21,7 @@ export type TreatmentCategory = {
 export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '01',
-    image: '/img/rct_steps.jpg',
+    image: '/img/checkup_1.jpg',
     slug: 'general-dentistry',
     title: 'General & Preventive Dentistry',
     description:
@@ -30,6 +30,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'dental-checkup',
         title: 'Dental Check-up',
+        image: '/img/checkup_1.jpg',
         category: 'General Dentistry',
         short: 'A thorough examination to catch dental problems early.',
         description:
@@ -49,6 +50,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       },
       {
         slug: 'dental-cleaning',
+        image: '/img/scaling.jpg',
         title: 'Scaling & Teeth Cleaning',
         category: 'General Dentistry',
         short: 'Professional removal of plaque, tartar and surface deposits.',
@@ -70,6 +72,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'dental-fillings',
         title: 'Dental Fillings',
+        image: '/img/steps-of-dental-filling.jpg',
         category: 'Restorative Dentistry',
         short:
           'Restore teeth affected by cavities while preserving healthy tooth structure.',
@@ -88,6 +91,7 @@ export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '02',
     slug: 'root-canal-treatment',
+    image: '/img/rct_steps.jpg',
     title: 'Root Canal & Tooth Saving',
     description:
       'When a tooth is infected or badly damaged, the goal is to save the natural tooth whenever possible.',
@@ -95,6 +99,8 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'root-canal-treatment',
         title: 'Root Canal Treatment',
+        image: '/img/rct_steps2.jpg',
+
         category: 'Endodontics',
         short:
           'Remove infection, relieve symptoms and preserve the natural tooth.',
@@ -118,6 +124,7 @@ export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '03',
     slug: 'crowns-bridges-dentures',
+    image: '/img/dental_crown.jpg',
     title: 'Crowns, Bridges & Dentures',
     description:
       'Restore damaged or missing teeth with restorations selected around function, appearance and long-term maintenance.',
@@ -125,6 +132,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'dental-crowns',
         title: 'Dental Crowns',
+        image: '/img/dental_crown.jpg',
         category: 'Prosthodontics',
         short:
           'Protect and restore teeth that are weakened or heavily damaged.',
@@ -141,6 +149,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'zirconia-crowns',
         title: 'Zirconia Crowns',
+        image: '/img/dental_crown.jpg',
         category: 'Prosthodontics',
         short: 'A strong, tooth-colored restoration for selected cases.',
         description:
@@ -156,6 +165,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'dental-bridges',
         title: 'Dental Bridges',
+        image: '/img/dental_crown.jpg',
         category: 'Prosthodontics',
         short:
           'Replace a missing tooth using support from neighboring teeth or restorations.',
@@ -189,6 +199,7 @@ export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '04',
     slug: 'orthodontics',
+    image: '/img/ortho2.jpg',
     title: 'Orthodontics & Clear Aligners',
     description:
       'Straighten teeth, improve bite and build a healthier, more confident smile with specialist orthodontic care.',
@@ -196,6 +207,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'braces',
         title: 'Dental Braces',
+        image: '/img/ortho.jpg',
         category: 'Orthodontics',
         short:
           'Correct crooked teeth, spacing and bite problems with fixed orthodontic treatment.',
@@ -217,6 +229,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'clear-aligners',
         title: 'Clear Aligners',
+        image: '/img/aligners.jpg',
         category: 'Orthodontics',
         short:
           'A discreet, removable approach to selected orthodontic problems.',
@@ -240,6 +253,7 @@ export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '05',
     slug: 'gum-treatment',
+    image: '/img/bleeding_gums.jpg',
     title: 'Gum Treatment',
     description:
       'From bleeding gums and bad breath to periodontal disease, healthy gums are essential for keeping your teeth for longer.',
@@ -247,6 +261,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'gum-disease-treatment',
         title: 'Gum Disease Treatment',
+        image: '/img/bleeding_gums.jpg',
         category: 'Periodontology',
         short:
           'Identify and manage inflammation, infection and damage around the teeth.',
@@ -270,6 +285,7 @@ export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '06',
     slug: 'oral-surgery',
+    image: '/img/wisdomTooth.jpg',
     title: 'Extractions & Oral Surgery',
     description:
       'Comfort-focused surgical care for teeth that cannot be treated conservatively or require planned removal.',
@@ -278,6 +294,7 @@ export const treatmentCategories: TreatmentCategory[] = [
         slug: 'tooth-extraction',
         title: 'Tooth Extraction',
         category: 'Oral Surgery',
+        image: '/img/wisdom_tooth.jpg',
         short: 'Safe removal of teeth when extraction is clinically necessary.',
         description:
           'When a tooth cannot be predictably restored or presents another clinical problem, extraction may be recommended after assessment.',
@@ -292,6 +309,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'wisdom-tooth-removal',
         title: 'Wisdom Tooth Removal',
+        image: '/img/wisdomTooth.jpg',
         category: 'Oral Surgery',
         short:
           'Treatment for painful, infected, impacted or problematic wisdom teeth.',
@@ -315,6 +333,7 @@ export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '07',
     slug: 'cosmetic-dentistry',
+    image: '/img/whitening1.jpg',
     title: 'Cosmetic & Smile Dentistry',
     description:
       'Subtle improvements that help teeth look cleaner, brighter and more harmonious while keeping treatment appropriate to your oral health.',
@@ -322,6 +341,7 @@ export const treatmentCategories: TreatmentCategory[] = [
       {
         slug: 'teeth-whitening',
         title: 'Teeth Whitening',
+        image: '/img/whitening2.jpg',
         category: 'Cosmetic Dentistry',
         short:
           'Brighten natural teeth affected by suitable types of staining and discoloration.',
@@ -345,12 +365,14 @@ export const treatmentCategories: TreatmentCategory[] = [
   {
     number: '08',
     slug: 'childrens-dentistry',
+    image: '/img/pedo_case.jpg',
     title: "Children's Dentistry",
     description:
       'Gentle dental care that helps children build healthy habits and positive experiences with the dentist.',
     treatments: [
       {
         slug: 'childrens-dentistry',
+        image: '/img/pedo_case.jpg',
         title: "Children's Dental Care",
         category: 'Paediatric Dentistry',
         short: 'Preventive and restorative care tailored to growing smiles.',

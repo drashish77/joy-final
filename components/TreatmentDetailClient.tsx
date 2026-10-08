@@ -67,7 +67,7 @@ export default function TreatmentDetailClient({
 
             <div className='td-reveal love relative h-[360px] overflow-hidden rounded-[2rem] bg-[#dfe4de] md:h-[430px] lg:h-[500px]'>
               <Image
-                src={treatment.image ?? '/img/rct_steps.jpg'}
+                src={treatment.image ?? '/img/rct_steps2.jpg'}
                 alt={`${treatment.title} at Joy Dental`}
                 fill
                 priority
@@ -75,7 +75,7 @@ export default function TreatmentDetailClient({
                 className='td-hero-art object-cover'
               />
               <div className='absolute inset-0 bg-gradient-to-t from-[#17211d]/45 via-transparent to-white/10' />
-              <div className='absolute bottom-7 left-7 right-7 flex items-end justify-between text-white'>
+              <div className='absolute bottom-0 left-0 right-0 flex items-end justify-between bg-orange-500/70 px-5 pb-4 text-white'>
                 <span className='text-xs uppercase tracking-[.22em]'>
                   Joy Dental · Indore
                 </span>
